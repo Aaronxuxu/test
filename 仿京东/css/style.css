@@ -13,6 +13,10 @@
         float: left;
     }
     
+    ul {
+        margin: 0;
+    }
+    
     img {
         vertical-align: middle;
     }
@@ -20,6 +24,10 @@
     a {
         color: black;
         text-decoration: none;
+    }
+    
+    a:hover {
+        color: #c81623;
     }
     
     input {
@@ -64,7 +72,7 @@
         width: 100%;
         background-color: #e3e4e5;
         height: 30px;
-        z-index: 10;
+        z-index: 20;
     }
     
     .navigatio-bar main {
@@ -72,6 +80,16 @@
         width: 100%;
         height: 180px;
         background-color: white;
+    }
+    
+    .navigatio-bar footer {
+        display: flex;
+        position: relative;
+        width: 80%;
+        margin-top: 20px;
+        height: 470px;
+        justify-content: space-between;
+        min-width: 1050px;
     }
     
     .navigatio-bar header .w,
@@ -136,10 +154,6 @@
         background-color: #f4f4f4;
     }
     
-    .navigatio-bar header .w .left .none .region1 li:hover a {
-        color: #f10215;
-    }
-    
     .navigatio-bar header .w .left .none .region2,
     .navigatio-bar header .w .left .none .region3 {
         width: 100%;
@@ -162,11 +176,6 @@
         text-align: left;
         color: gray;
         margin-top: 5px;
-    }
-    
-    .navigatio-bar header .w .left .none .region2 a:hover,
-    .navigatio-bar header .w .left .none .region3 a:hover {
-        color: #f10215;
     }
     
     .navigatio-bar header .w .left .none .region3 a {
@@ -229,10 +238,6 @@
     .navigatio-bar header .w .right .server span,
     .navigatio-bar header .w .right .nav span {
         float: left;
-    }
-    
-    .navigatio-bar header .w .right a:hover {
-        color: #f10215;
     }
     
     .navigatio-bar header .w .right .myjd .none {
@@ -518,10 +523,6 @@
         color: #c81623;
     }
     
-    .navigatio-bar main .w .one .bottom li a:hover {
-        color: #c81623;
-    }
-    
     .navigatio-bar main .w .two {
         position: absolute;
         width: 100px;
@@ -537,4 +538,515 @@
         background: url(../images/二维码.png);
         background-size: contain;
         margin-top: 10px;
+    }
+    
+    .navigatio-bar footer .one,
+    .navigatio-bar footer .two,
+    .navigatio-bar footer .three,
+    .navigatio-bar footer .four {
+        /* position: relative;
+        float: left; */
+        height: 470px;
+        background-color: white;
+        /* overflow: hidden; */
+    }
+    
+    .navigatio-bar footer .one {
+        height: 450px;
+        padding: 10px 0;
+        z-index: 10;
+    }
+    
+    .navigatio-bar footer .three {
+        background-color: transparent;
+    }
+    
+    .navigatio-bar footer .one,
+    .navigatio-bar footer .three,
+    .navigatio-bar footer .four {
+        width: 16%;
+    }
+    
+    .navigatio-bar footer .two {
+        width: 49%;
+    }
+    
+    .navigatio-bar footer .one .navli {
+        /* position: relative; */
+        width: 100%;
+        height: 25px;
+        line-height: 25px;
+    }
+    
+    .navigatio-bar footer .one ul .navli a,
+    .navigatio-bar footer .one ul .navli span {
+        font-size: 13px;
+    }
+    
+    .navigatio-bar footer .one ul .navli a:nth-child(1) {
+        margin-left: 10px;
+    }
+    
+    .navigatio-bar footer .one ul .navli:hover {
+        background-color: #e3e4e5;
+    }
+    
+    .navigatio-bar footer .one .none {
+        width: 84%;
+        height: 468px;
+        padding: 0;
+        top: 0;
+        left: 16%;
+        border: 1px solid #d4d4d4;
+        box-shadow: 0 0 3px 1px gray;
+        min-width: 1128px;
+        /* display: block; */
+    }
+    
+    .navigatio-bar footer .one .navli:hover .none {
+        display: block;
+    }
+    
+    .navigatio-bar footer .one .none .left,
+    .navigatio-bar footer .one .none .right {
+        float: left;
+        box-sizing: border-box;
+        width: 80%;
+        height: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+    
+    .navigatio-bar footer .one .none .right {
+        width: 20%;
+        padding: 20px 20px 20px 0;
+        /* background-color: black; */
+    }
+    
+    .navigatio-bar footer .one .none .left .top {
+        width: 100%;
+        height: 10%;
+    }
+    
+    .navigatio-bar footer .one .none .left .top li {
+        text-align: center;
+        width: auto;
+        height: 35px;
+        line-height: 35px;
+        margin: 3.5px 0 0 20px;
+        background-color: black;
+    }
+    
+    .navigatio-bar footer .one .none .left .top li a {
+        float: left;
+        display: block;
+        height: 100%;
+        margin: 0;
+        padding: 0 0 0 15px;
+        color: white;
+    }
+    
+    .navigatio-bar footer .one .none .left .top li:hover {
+        background-color: #c81623;
+    }
+    
+    .navigatio-bar footer .one .none .left .top li::after {
+        float: left;
+        content: "";
+        width: 20px;
+        height: 20px;
+        background: url(../images/dyh.png);
+        background-size: 100%;
+        margin-top: 7.5px;
+    }
+    
+    .navigatio-bar footer .one .none .left .dl {
+        box-sizing: border-box;
+        display: flex;
+        width: 100%;
+        height: 90%;
+        padding: 10px 0 0 10px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .navigatio-bar footer .one .none .left .dl dl {
+        width: 100%;
+    }
+    
+    .navigatio-bar footer .one .none .left .dl dl dt {
+        float: left;
+        width: 10%;
+        text-align: right;
+    }
+    
+    .navigatio-bar footer .one .none .left .dl dl dt a::after {
+        content: "";
+        float: right;
+        width: 15px;
+        height: 15px;
+        background: url(../images/dyhB.png);
+        background-size: 15px 15px;
+        margin: 3px 0 3px 8px;
+    }
+    
+    .navigatio-bar footer .one .none .left .dl dl dd {
+        /* display: flex; */
+        float: left;
+        width: 87%;
+        height: auto;
+        margin-left: 3%;
+        /* flex-wrap: wrap;
+        justify-content: space-around; */
+    }
+    
+    .navigatio-bar footer .one .none .left .dl dl dd li {
+        width: auto;
+        height: auto;
+        margin-right: 10px;
+        line-height: normal;
+    }
+    
+    .navigatio-bar footer .one .none .left .dl dl dd li:hover {
+        background-color: transparent;
+    }
+    
+    .navigatio-bar footer .one .none .left .dl dl dt a,
+    .navigatio-bar footer .one .none .left .dl dl dd li a {
+        font-size: 13px;
+        margin: 0;
+    }
+    
+    .navigatio-bar footer .one .none .left .dl dl dd li a {
+        color: gray;
+    }
+    
+    .navigatio-bar footer .one .none .right .top,
+    .navigatio-bar footer .one .none .right .bottom {
+        float: left;
+        width: 100%;
+        height: auto;
+        max-width: 168px;
+    }
+    
+    .navigatio-bar footer .one .none .right .top {
+        margin-bottom: 15px;
+    }
+    
+    .navigatio-bar footer .one .none .right .top li {
+        width: 83px;
+        height: 35px;
+        margin: 0 1px 1px 0;
+    }
+    
+    .navigatio-bar footer .one .none .right .top li a,
+    .navigatio-bar footer .one .none .right .bottom li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    
+    .navigatio-bar footer .one .none .right .top li img {
+        width: 83px;
+        height: 35px;
+    }
+    
+    .navigatio-bar footer .one .none .right .bottom li {
+        width: 168px;
+        height: 134px;
+        margin-bottom: 2px;
+    }
+    
+    .navigatio-bar footer .one .none .right .bottom li img {
+        width: 168px;
+        height: 134px;
+    }
+    /* .el-carousel--horizontal {
+            overflow-x: hidden;
+            height: 100%;
+        } */
+    
+    .navigatio-bar footer .two .twoNav,
+    .navigatio-bar footer .three .threeNav {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .navigatio-bar footer .three .threeNav .sm3nav {
+        width: 190px;
+        height: 150px;
+    }
+    
+    .navigatio-bar footer .four {
+        padding: 10px;
+        padding-bottom: 0;
+        box-sizing: border-box;
+    }
+    
+    .navigatio-bar footer .four .login {
+        width: 100%;
+        height: 22%;
+    }
+    
+    .navigatio-bar footer .four .login .photo {
+        float: left;
+        width: 25%;
+        height: 50%;
+        max-width: 49px;
+        margin-left: 5%;
+    }
+    
+    .navigatio-bar footer .four .login .photo a {
+        display: block;
+        width: 44px;
+        height: 44px;
+        /* background: url(../images/b2.png) no-repeat -3px -3px;
+            background-size: 84px auto; */
+        text-align: center;
+        overflow: hidden;
+        border-radius: 100%;
+        border: 1px solid white;
+        box-shadow: 0 0 1px 1px gray;
+    }
+    
+    .navigatio-bar footer .four .login .photo a img {
+        width: 48px;
+        height: 48px;
+    }
+    
+    .navigatio-bar footer .four .login .right {
+        float: left;
+        width: 70%;
+        height: 50%;
+        max-width: 145px;
+    }
+    
+    .navigatio-bar footer .four .login .right .welcome {
+        display: block;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font-size: 13px;
+        color: gray;
+    }
+    
+    .navigatio-bar footer .four .login .right .zc {
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+    }
+    
+    .navigatio-bar footer .four .login .button {
+        display: flex;
+        width: 100%;
+        height: 50%;
+        justify-content: center
+    }
+    
+    .navigatio-bar footer .four .login .button .left,
+    .navigatio-bar footer .four .login .button .right {
+        display: flex;
+        width: 40%;
+        height: 100%;
+    }
+    
+    .navigatio-bar footer .four .login .button a {
+        display: block;
+        width: auto;
+        height: auto;
+        padding: 5px;
+        text-align: center;
+        border-radius: 15px;
+        color: white;
+        background-color: #c81623;
+        font-size: 14px;
+    }
+    
+    .navigatio-bar footer .four .login .button .right a {
+        background-color: black;
+        color: gold;
+    }
+    
+    .navigatio-bar footer .four .kb {
+        box-sizing: border-box;
+        height: 33%;
+        border: 1px solid gray;
+        border-left: none;
+        border-right: none;
+        padding-top: 5px;
+    }
+    
+    .navigatio-bar footer .four .kb .top {
+        width: 100%;
+        height: 25%;
+    }
+    
+    .navigatio-bar footer .four .kb .top h3 {
+        float: left;
+        font-size: 17px;
+    }
+    
+    .navigatio-bar footer .four .kb .top a {
+        float: right;
+        color: gray;
+        font-size: 14px;
+    }
+    
+    .navigatio-bar footer .four .kb .top a:after {
+        float: right;
+        content: "";
+        width: 20px;
+        height: 20px;
+        background: url(../images/dyhB.png);
+        background-size: 20px 20px;
+    }
+    
+    .navigatio-bar footer .four .kb .content {
+        width: 100%;
+        height: 75%;
+    }
+    
+    .navigatio-bar footer .four .kb .content dl {
+        width: 100%;
+        height: 18px;
+        margin: 0 0 5px 0;
+    }
+    
+    .navigatio-bar footer .four .kb .content dl dt {
+        float: left;
+        width: 15%;
+        height: auto;
+        background-color: pink;
+        color: red;
+        font-size: 14px;
+        padding: 0 3%;
+    }
+    
+    .navigatio-bar footer .four .kb .content dl dd {
+        float: left;
+        width: 75%;
+        overflow: hidden;
+        margin-left: 4%;
+        font-size: 14px;
+    }
+    
+    .navigatio-bar footer .four .iconserver {
+        display: flex;
+        width: 100%;
+        height: 44%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 5px;
+    }
+    
+    .navigatio-bar footer .four .iconserver li {
+        width: 30%;
+        height: 25%;
+        text-align: center;
+        font-size: 12px;
+    }
+    
+    .navigatio-bar footer .four .iconserver li a img {
+        display: block;
+        width: 28px;
+        height: 28px;
+    }
+    
+    .navigatio-bar header .w .left .none .region2 a:hover,
+    .navigatio-bar header .w .left .none .region3 a:hover,
+    .navigatio-bar header .w .left .none .region1 li:hover a,
+    .navigatio-bar header .w .right a:hover,
+    .navigatio-bar main .w .one .bottom li a:hover,
+    .navigatio-bar footer .one .none .left .dl dl dd li a:hover,
+    .navigatio-bar footer .four .login .right .welcome:hover,
+    .navigatio-bar footer .four .kb .top a:hover {
+        color: #c81623;
+    }
+    
+    .daily {
+        width: 100%;
+        margin-top: 40px;
+    }
+    
+    .daily .seckill {
+        display: flex;
+        width: 80%;
+        height: 260px;
+        justify-content: space-around;
+    }
+    
+    .daily .seckill .left {
+        float: left;
+        position: relative;
+        width: 15%;
+        height: 100%;
+        background: url(../images/ms.png) no-repeat;
+        background-position: 50%;
+    }
+    
+    .daily .seckill .left a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .daily .seckill .left a h3 {
+        position: absolute;
+        width: 100%;
+        top: 15%;
+        text-align: center;
+        font-size: 28px;
+        color: white;
+    }
+    
+    .daily .seckill .left a .time {
+        position: absolute;
+        width: 100%;
+        bottom: 15%;
+        color: white;
+        text-align: center;
+    }
+    
+    .daily .seckill .left a .time .H {
+        width: 100%;
+        height: 35px;
+    }
+    
+    .daily .seckill .left a .time .H h2 {
+        float: left;
+        font-size: 25px;
+        width: 48%;
+        text-align: right;
+        margin-right: 4%;
+    }
+    
+    .daily .seckill .left a .time .H h5 {
+        float: left;
+        width: 48%;
+        height: 35px;
+        line-height: 35px;
+        text-align: left;
+    }
+    
+    .daily .seckill .left a .time .timming {
+        width: 100%;
+        height: 30px;
+        margin-top: 5px;
+        font-size: 20px;
+    }
+    
+    .daily .seckill .left a .time .timming span:nth-child(1),
+    .daily .seckill .left a .time .timming span:nth-child(3),
+    .daily .seckill .left a .time .timming span:nth-child(5) {
+        background-color: black;
+    }
+    
+    .daily .seckill .center {
+        float: left;
+        position: relative;
+        width: 84%;
+        height: 100%;
+        background-color: white;
     }
