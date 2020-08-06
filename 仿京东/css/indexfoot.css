@@ -1,0 +1,123 @@
+.index-foot {
+    height: 420px;
+    background-color: #f5f5f5;
+}
+
+.index-foot .foot_head {
+    width: 1200px;
+    height: 105px;
+}
+
+.index-foot .foot_head li {
+    float: left;
+    width: 240px;
+    height: 105px;
+}
+
+.index-foot .foot_head li .imga1,
+.index-foot .foot_head li .imga2,
+.index-foot .foot_head li .imga3 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 27.5px;
+    background: url(../images/icons.png) no-repeat;
+    margin-left: 30px;
+}
+
+.index-foot .foot_head li .imga1 {
+    background-position: -253px -3px;
+}
+
+.index-foot .foot_head li .imga2 {
+    background-position: -255px -54px;
+}
+
+.index-foot .foot_head li .imga3 {
+    background-position: -257px -106px;
+}
+
+.index-foot .foot_head li h5 {
+    margin-top: 31px;
+    height: 20px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.index-foot .foot_head li h4 {
+    height: 30px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.index-foot .foot_head li h5,
+.index-foot .foot_head li h4 {
+    float: left;
+    margin-left: 10px;
+    width: 150px;
+    color: gray;
+}
+
+.index-foot .foot_body {
+    width: 1200px;
+    height: 208px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.index-foot .foot_body dl {
+    float: left;
+    height: 180px;
+    margin: 14px 81px 0 50px;
+}
+
+.index-foot .foot_body dl dt {
+    color: #666666;
+}
+
+.index-foot .foot_body dl dd {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #666666;
+}
+
+
+/*     
+.index-foot .foot_body .erweima {
+    margin: 14px 0 0 28px;
+    text-align: center;
+}
+
+.index-foot .foot_body .erweima dd {
+    margin-top: 20px;
+} */
+
+.index-foot .foot_foot {
+    width: 1200px;
+    height: 105px;
+    text-align: center;
+    color: #666666;
+    font-size: 12px;
+}
+
+.index-foot .foot_foot ul {
+    margin-left: 160.5px;
+}
+
+.index-foot .foot_foot ul li {
+    float: left;
+    height: 20px;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.index-foot .foot_foot .p1 {
+    float: left;
+    width: 1200px;
+}
+
+.index-foot .foot_foot .p2 {
+    float: left;
+    width: 1200px;
+    margin-top: 5px;
+}

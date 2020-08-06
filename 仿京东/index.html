@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/indexfoot.css">
     <script src="js/vue.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
     <script src="https://unpkg.com/element-ui/lib/index.js"></script>
-
     <title>Document</title>
 </head>
 
@@ -1267,7 +1267,7 @@
                 </div>
                 <div class="center">
                     <div class="center-left">
-                        <el-carousel height="150px">
+                        <!-- <el-carousel height="150px">
                             <el-carousel-item v-for="item in 3" :key="item">
                                 <a :href="">
                                     <img :src="" alt="">
@@ -1276,16 +1276,690 @@
                                     <span>{{item.omoney}}</span>
                                 </a>
                             </el-carousel-item>
+                        </el-carousel> -->
+                        <ul>
+                            <li>
+                                <a href=""><img src="uploads/ms1.jpg.webp" alt="">
+                                    <p>Apple Iphone??????????????????????</p>
+                                    <div class="price">
+                                        <span class="present"><i>¥</i>4049.00</span>
+                                        <span class="original"><i>¥</i>4049.00</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href=""><img src="uploads/ms1.jpg.webp" alt="">
+                                    <p>Apple Iphone??????????????????????</p>
+                                    <div class="price">
+                                        <span class="present"><i>¥</i>4049.00</span>
+                                        <span class="original"><i>¥</i>4049.00</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href=""><img src="uploads/ms1.jpg.webp" alt="">
+                                    <p>Apple Iphone??????????????????????</p>
+                                    <div class="price">
+                                        <span class="present"><i>¥</i>4049.00</span>
+                                        <span class="original"><i>¥</i>4049.00</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href=""><img src="uploads/ms1.jpg.webp" alt="">
+                                    <p>Apple Iphone??????????????????????</p>
+                                    <div class="price">
+                                        <span class="present"><i>¥</i>4049.00</span>
+                                        <span class="original"><i>¥</i>4049.00</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="center-right">
+                        <el-carousel height="240px" interval=0 indicator-position="none">
+                            <el-carousel-item v-for="imgMsR in imgListMSR" :key="imgMsR.id" height="100%">
+                                <a :href="imgMsR.idUrl" class="bigA">
+                                    <img :src="imgMsR.idView" alt="">
+                                    <span class="span1">{{imgMsR.span1}}</span>
+                                    <span class="span2">{{imgMsR.span2}}</span>
+                                    <div class="button">{{imgMsR.txt}}</div>
+                                </a>
+                            </el-carousel-item>
                         </el-carousel>
                     </div>
-                    <div class="center-right"></div>
                 </div>
             </div>
-            <div class="BrandSpecial"></div>
-            <div class="discover"></div>
-            <div class="Four-Columns"></div>
+            <div class="BrandSpecial">
+                <div class="left">
+                    <div class="head">
+                        <a href="" class="title">每日特价</a>
+                        <div class="nav">
+                            <ul>
+                                <li>
+                                    <a href="">精选</a>
+                                    <div class="none">
+                                        <div class="left">
+                                            <a href="">
+                                                <img src="uploads/榴莲.jpg.webp" alt="">
+                                                <h6>包三房&nbsp;金枕头巴掌榴莲</h6>
+                                                <div class="price">
+                                                    <span class="present"><i>¥</i>59.8</span>
+                                                    <span class="original"><i>¥</i>99</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="right">
+                                            <ul>
+                                                <li>
+                                                    <a href="">
+                                                        <img src="uploads/泡面jpg.webp" alt="">
+                                                        <div class="jieshao">
+                                                            <h5>重庆正宗酸辣粉六桶装</h5>
+                                                            <div class="price">
+                                                                <span class="present"><i>¥</i>17.9</span>
+                                                                <span class="original"><i>¥</i>34.8</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <img src="uploads/泡面jpg.webp" alt="">
+                                                        <div class="jieshao">
+                                                            <h5>重庆正宗酸辣粉六桶装</h5>
+                                                            <div class="price">
+                                                                <span class="present"><i>¥</i>17.9</span>
+                                                                <span class="original"><i>¥</i>34.8</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <img src="uploads/泡面jpg.webp" alt="">
+                                                        <div class="jieshao">
+                                                            <h5>重庆正宗酸辣粉六桶装</h5>
+                                                            <div class="price">
+                                                                <span class="present"><i>¥</i>17.9</span>
+                                                                <span class="original"><i>¥</i>34.8</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <img src="uploads/泡面jpg.webp" alt="">
+                                                        <div class="jieshao">
+                                                            <h5>重庆正宗酸辣粉六桶装</h5>
+                                                            <div class="price">
+                                                                <span class="present"><i>¥</i>17.9</span>
+                                                                <span class="original"><i>¥</i>34.8</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="">精选</a>
+                                    <div class="none">
+                                        <div class="left">
+                                            <a href="">
+                                                <img src="uploads/榴莲.jpg.webp" alt="">
+                                                <h6>包三房&nbsp;金枕头巴掌榴莲</h6>
+                                                <div class="price">
+                                                    <span class="present"><i>¥</i>59.8</span>
+                                                    <span class="original"><i>¥</i>99</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="right">
+                                            <ul>
+                                                <li>
+                                                    <a href="">
+                                                        <img src="uploads/泡面jpg.webp" alt="">
+                                                        <div class="jieshao">
+                                                            <h5>重庆正宗酸辣粉六桶装</h5>
+                                                            <div class="price">
+                                                                <span class="present"><i>¥</i>17.9</span>
+                                                                <span class="original"><i>¥</i>34.8</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <img src="uploads/泡面jpg.webp" alt="">
+                                                        <div class="jieshao">
+                                                            <h5>重庆正宗酸辣粉六桶装</h5>
+                                                            <div class="price">
+                                                                <span class="present"><i>¥</i>17.9</span>
+                                                                <span class="original"><i>¥</i>34.8</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <img src="uploads/泡面jpg.webp" alt="">
+                                                        <div class="jieshao">
+                                                            <h5>重庆正宗酸辣粉六桶装</h5>
+                                                            <div class="price">
+                                                                <span class="present"><i>¥</i>17.9</span>
+                                                                <span class="original"><i>¥</i>34.8</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <img src="uploads/泡面jpg.webp" alt="">
+                                                        <div class="jieshao">
+                                                            <h5>重庆正宗酸辣粉六桶装</h5>
+                                                            <div class="price">
+                                                                <span class="present"><i>¥</i>17.9</span>
+                                                                <span class="original"><i>¥</i>34.8</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="">精选</a>
+                                    <div class="none">
+                                        <div class="left">
+                                            <a href="">
+                                                <img src="uploads/榴莲.jpg.webp" alt="">
+                                                <h6>包三房&nbsp;金枕头巴掌榴莲</h6>
+                                                <div class="price">
+                                                    <span class="present"><i>¥</i>59.8</span>
+                                                    <span class="original"><i>¥</i>99</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="right">
+                                            <ul>
+                                                <li>
+                                                    <a href="">
+                                                        <img src="uploads/泡面jpg.webp" alt="">
+                                                        <div class="jieshao">
+                                                            <h5>重庆正宗酸辣粉六桶装</h5>
+                                                            <div class="price">
+                                                                <span class="present"><i>¥</i>17.9</span>
+                                                                <span class="original"><i>¥</i>34.8</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <img src="uploads/泡面jpg.webp" alt="">
+                                                        <div class="jieshao">
+                                                            <h5>重庆正宗酸辣粉六桶装</h5>
+                                                            <div class="price">
+                                                                <span class="present"><i>¥</i>17.9</span>
+                                                                <span class="original"><i>¥</i>34.8</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <img src="uploads/泡面jpg.webp" alt="">
+                                                        <div class="jieshao">
+                                                            <h5>重庆正宗酸辣粉六桶装</h5>
+                                                            <div class="price">
+                                                                <span class="present"><i>¥</i>17.9</span>
+                                                                <span class="original"><i>¥</i>34.8</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <img src="uploads/泡面jpg.webp" alt="">
+                                                        <div class="jieshao">
+                                                            <h5>重庆正宗酸辣粉六桶装</h5>
+                                                            <div class="price">
+                                                                <span class="present"><i>¥</i>17.9</span>
+                                                                <span class="original"><i>¥</i>34.8</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="">精选</a>
+                                    <div class="none">
+                                        <div class="left">
+                                            <a href="">
+                                                <img src="uploads/榴莲.jpg.webp" alt="">
+                                                <h6>包三房&nbsp;金枕头巴掌榴莲</h6>
+                                                <div class="price">
+                                                    <span class="present"><i>¥</i>59.8</span>
+                                                    <span class="original"><i>¥</i>99</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="right">
+                                            <ul>
+                                                <li>
+                                                    <a href="">
+                                                        <img src="uploads/泡面jpg.webp" alt="">
+                                                        <div class="jieshao">
+                                                            <h5>重庆正宗酸辣粉六桶装</h5>
+                                                            <div class="price">
+                                                                <span class="present"><i>¥</i>17.9</span>
+                                                                <span class="original"><i>¥</i>34.8</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <img src="uploads/泡面jpg.webp" alt="">
+                                                        <div class="jieshao">
+                                                            <h5>重庆正宗酸辣粉六桶装</h5>
+                                                            <div class="price">
+                                                                <span class="present"><i>¥</i>17.9</span>
+                                                                <span class="original"><i>¥</i>34.8</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <img src="uploads/泡面jpg.webp" alt="">
+                                                        <div class="jieshao">
+                                                            <h5>重庆正宗酸辣粉六桶装</h5>
+                                                            <div class="price">
+                                                                <span class="present"><i>¥</i>17.9</span>
+                                                                <span class="original"><i>¥</i>34.8</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <img src="uploads/泡面jpg.webp" alt="">
+                                                        <div class="jieshao">
+                                                            <h5>重庆正宗酸辣粉六桶装</h5>
+                                                            <div class="price">
+                                                                <span class="present"><i>¥</i>17.9</span>
+                                                                <span class="original"><i>¥</i>34.8</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="">精选</a>
+                                    <div class="none">
+                                        <div class="left">
+                                            <a href="">
+                                                <img src="uploads/榴莲.jpg.webp" alt="">
+                                                <h6>包三房&nbsp;金枕头巴掌榴莲</h6>
+                                                <div class="price">
+                                                    <span class="present"><i>¥</i>59.8</span>
+                                                    <span class="original"><i>¥</i>99</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="right">
+                                            <ul>
+                                                <li>
+                                                    <a href="">
+                                                        <img src="uploads/泡面jpg.webp" alt="">
+                                                        <div class="jieshao">
+                                                            <h5>重庆正宗酸辣粉六桶装</h5>
+                                                            <div class="price">
+                                                                <span class="present"><i>¥</i>17.9</span>
+                                                                <span class="original"><i>¥</i>34.8</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <img src="uploads/泡面jpg.webp" alt="">
+                                                        <div class="jieshao">
+                                                            <h5>重庆正宗酸辣粉六桶装</h5>
+                                                            <div class="price">
+                                                                <span class="present"><i>¥</i>17.9</span>
+                                                                <span class="original"><i>¥</i>34.8</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <img src="uploads/泡面jpg.webp" alt="">
+                                                        <div class="jieshao">
+                                                            <h5>重庆正宗酸辣粉六桶装</h5>
+                                                            <div class="price">
+                                                                <span class="present"><i>¥</i>17.9</span>
+                                                                <span class="original"><i>¥</i>34.8</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <img src="uploads/泡面jpg.webp" alt="">
+                                                        <div class="jieshao">
+                                                            <h5>重庆正宗酸辣粉六桶装</h5>
+                                                            <div class="price">
+                                                                <span class="present"><i>¥</i>17.9</span>
+                                                                <span class="original"><i>¥</i>34.8</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="">精选</a>
+                                    <div class="none">
+                                        <div class="left">
+                                            <a href="">
+                                                <img src="uploads/榴莲.jpg.webp" alt="">
+                                                <h6>包三房&nbsp;金枕头巴掌榴莲</h6>
+                                                <div class="price">
+                                                    <span class="present"><i>¥</i>59.8</span>
+                                                    <span class="original"><i>¥</i>99</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="right">
+                                            <ul>
+                                                <li>
+                                                    <a href="">
+                                                        <img src="uploads/泡面jpg.webp" alt="">
+                                                        <div class="jieshao">
+                                                            <h5>重庆正宗酸辣粉六桶装</h5>
+                                                            <div class="price">
+                                                                <span class="present"><i>¥</i>17.9</span>
+                                                                <span class="original"><i>¥</i>34.8</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <img src="uploads/泡面jpg.webp" alt="">
+                                                        <div class="jieshao">
+                                                            <h5>重庆正宗酸辣粉六桶装</h5>
+                                                            <div class="price">
+                                                                <span class="present"><i>¥</i>17.9</span>
+                                                                <span class="original"><i>¥</i>34.8</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <img src="uploads/泡面jpg.webp" alt="">
+                                                        <div class="jieshao">
+                                                            <h5>重庆正宗酸辣粉六桶装</h5>
+                                                            <div class="price">
+                                                                <span class="present"><i>¥</i>17.9</span>
+                                                                <span class="original"><i>¥</i>34.8</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <img src="uploads/泡面jpg.webp" alt="">
+                                                        <div class="jieshao">
+                                                            <h5>重庆正宗酸辣粉六桶装</h5>
+                                                            <div class="price">
+                                                                <span class="present"><i>¥</i>17.9</span>
+                                                                <span class="original"><i>¥</i>34.8</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="head">
+                        <a href="">品牌闪购</a>
+                    </div>
+                    <div class="main">
+                        <div class="left">
+                            <a href="">
+                                <img src="images/PHILIPS.webp" alt="" class="icon">
+                                <h5 class="icon-h5">飞利浦智能锁专场</h5>
+                                <div class="">
+                                    <span class="icon-span1">爆款限量抢五折</span>
+                                    <span class="icon-span2">仅剩2天</span>
+                                </div>
+                                <img src="uploads/门锁.webp" alt="" class="icon-image">
+                            </a>
+                        </div>
+                        <div class="right">
+                            <ul>
+                                <li class="liLeft">
+                                    <a href=""><img src="images/zst.webp" alt=""><span>资生堂自营专场</span></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="images/zst.webp" alt=""><span>资生堂自营专场</span></a>
+                                </li>
+                                <li class="liLeft">
+                                    <a href=""><img src="images/zst.webp" alt=""><span>资生堂自营专场</span></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="images/zst.webp" alt=""><span>资生堂自营专场</span></a>
+                                </li>
+                                <li class="liLeft">
+                                    <a href=""><img src="images/zst.webp" alt=""><span>资生堂自营专场</span></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="images/zst.webp" alt=""><span>资生堂自营专场</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="discover">
+                <div class="left">
+                    <div class="a"> <a href="">探索新生活</a></div>
+                </div>
+                <div class="center">
+                    <div class="total1">
+                        <ul>
+                            <li class="liOne">
+                                <a href=""><img src="uploads/发现好货1.jpg.webp" alt="" class="OneTop"><span class="OneBot">发现好货发现好货发现好货发现好货</span></a>
+                            </li>
+                            <li class="liTwo">
+                                <a href=""><span class="twoTop">发现好货发现好货发现好货</span><img src="uploads/发现好货2png.webp" alt="" class="TwpBot"></a>
+                            </li>
+                            <li class="liOne">
+                                <a href=""><img src="uploads/发现好货1.jpg.webp" alt="" class="OneTop"><span class="OneBot">发现好货发现好货发现好货发现好货</span></a>
+                            </li>
+                            <li class="liTwo">
+                                <a href=""><span class="twoTop">发现好货发现好货发现好货发现好货</span><img src="uploads/发现好货2png.webp" alt="" class="TwpBot"></a>
+                            </li>
+                            <li class="liOne">
+                                <a href=""><img src="uploads/发现好货1.jpg.webp" alt="" class="OneTop"><span class="OneBot">发现好货发现好货发现好货发现好货</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="total2">
+                        <ul>
+                            <li class="liOne">
+                                <a href=""><img src="uploads/发现好货1.jpg.webp" alt="" class="OneTop"><span class="OneBot">发现好货发现好货发现好货发现好货</span></a>
+                            </li>
+                            <li class="liTwo">
+                                <a href=""><span class="twoTop">发现好货发现好货发现好货</span><img src="uploads/发现好货2png.webp" alt="" class="TwpBot"></a>
+                            </li>
+                            <li class="liOne">
+                                <a href=""><img src="uploads/发现好货1.jpg.webp" alt="" class="OneTop"><span class="OneBot">发现好货发现好货发现好货发现好货</span></a>
+                            </li>
+                            <li class="liTwo">
+                                <a href=""><span class="twoTop">发现好货发现好货发现好货发现好货</span><img src="uploads/发现好货2png.webp" alt="" class="TwpBot"></a>
+                            </li>
+                            <li class="liOne">
+                                <a href=""><img src="uploads/发现好货1.jpg.webp" alt="" class="OneTop"><span class="OneBot">发现好货发现好货发现好货发现好货</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="total3">
+                        <ul>
+                            <li class="liOne">
+                                <a href=""><img src="uploads/发现好货1.jpg.webp" alt="" class="OneTop"><span class="OneBot">发现好货发现好货发现好货发现好货</span></a>
+                            </li>
+                            <li class="liTwo">
+                                <a href=""><span class="twoTop">发现好货发现好货发现好货</span><img src="uploads/发现好货2png.webp" alt="" class="TwpBot"></a>
+                            </li>
+                            <li class="liOne">
+                                <a href=""><img src="uploads/发现好货1.jpg.webp" alt="" class="OneTop"><span class="OneBot">发现好货发现好货发现好货发现好货</span></a>
+                            </li>
+                            <li class="liTwo">
+                                <a href=""><span class="twoTop">发现好货发现好货发现好货发现好货</span><img src="uploads/发现好货2png.webp" alt="" class="TwpBot"></a>
+                            </li>
+                            <li class="liOne">
+                                <a href=""><img src="uploads/发现好货1.jpg.webp" alt="" class="OneTop"><span class="OneBot">发现好货发现好货发现好货发现好货</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="lase">jojoadf</div>
+        <div class="Four-Columns"></div>
+    </div>
+    </div>
+
+    <div class="index-foot">
+        <div class="foot_head">
+            <ul>
+                <li>
+                    <div class="imga1"></div>
+                    <h5>正品保障</h5>
+                    <h4>正品保障，提供发票</h4>
+                </li>
+                <li>
+                    <div class="imga2"></div>
+                    <h5>正品保障</h5>
+                    <h4>正品保障，提供发票</h4>
+                </li>
+                <li>
+                    <div class="imga3"></div>
+                    <h5>正品保障</h5>
+                    <h4>正品保障，提供发票</h4>
+                </li>
+                <li>
+                    <div class="imga3"></div>
+                    <h5>正品保障</h5>
+                    <h4>正品保障，提供发票</h4>
+                </li>
+                <li>
+                    <div class="imga3"></div>
+                    <h5>正品保障</h5>
+                    <h4>正品保障，提供发票</h4>
+                </li>
+            </ul>
+        </div>
+        <div class="foot_body">
+            <dl>
+                <dt>购物指南</dt>
+                <dd><a href="">购物流程</a></dd>
+                <dd><a href="">会员介绍</a></dd>
+                <dd><a href="">生活旅行/团购</a></dd>
+                <dd><a href="">常见问题</a></dd>
+                <dd><a href="">大家电</a></dd>
+                <dd><a href="">联系客服</a></dd>
+            </dl>
+            <dl>
+                <dt>购物指南</dt>
+                <dd><a href="">购物流程</a></dd>
+                <dd><a href="">会员介绍</a></dd>
+                <dd><a href="">生活旅行/团购</a></dd>
+                <dd><a href="">常见问题</a></dd>
+                <dd><a href="">大家电</a></dd>
+                <dd><a href="">联系客服</a></dd>
+            </dl>
+            <dl>
+                <dt>购物指南</dt>
+                <dd><a href="">购物流程</a></dd>
+                <dd><a href="">会员介绍</a></dd>
+                <dd><a href="">生活旅行/团购</a></dd>
+                <dd><a href="">常见问题</a></dd>
+                <dd><a href="">大家电</a></dd>
+                <dd><a href="">联系客服</a></dd>
+            </dl>
+            <dl>
+                <dt>购物指南</dt>
+                <dd><a href="">购物流程</a></dd>
+                <dd><a href="">会员介绍</a></dd>
+                <dd><a href="">生活旅行/团购</a></dd>
+                <dd><a href="">常见问题</a></dd>
+                <dd><a href="">大家电</a></dd>
+                <dd><a href="">联系客服</a></dd>
+            </dl>
+            <dl>
+                <dt>购物指南</dt>
+                <dd><a href="">购物流程</a></dd>
+                <dd><a href="">会员介绍</a></dd>
+                <dd><a href="">生活旅行/团购</a></dd>
+                <dd><a href="">常见问题</a></dd>
+                <dd><a href="">大家电</a></dd>
+                <dd><a href="">联系客服</a></dd>
+            </dl>
+            <!-- <dl class="erweima">
+                </dl> -->
+        </div>
+        <div class="foot_foot">
+            <ul>
+                <li>关于我们</li>
+                <li>|</li>
+                <li>联系我们</li>
+                <li>|</li>
+                <li>联系客服</li>
+                <li>|</li>
+                <li>商家入驻</li>
+                <li>|</li>
+                <li>营销中心</li>
+                <li>|</li>
+                <li>手机品优购</li>
+                <li>|</li>
+                <li>友情链接</li>
+                <li>|</li>
+                <li>销售联盟</li>
+                <li>|</li>
+                <li>品优购社区</li>
+                <li>|</li>
+                <li>品优购公益</li>
+                <li>|</li>
+                <li>English Site</li>
+                <li>|</li>
+                <li>Contact U</li>
+            </ul>
+            <p class="p1">地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000 传真：010-82935100 邮箱: zhanghj+itcast.cn</p>
+            <p class="p2">京ICP备08001421号京公网安备110108007702</p>
+        </div>
     </div>
 </body>
 <script>
@@ -1349,6 +2023,21 @@
                 }, {
                     id: 2,
                     idView: 'uploads/t1.webp'
+                }],
+                imgListMSR: [{
+                    id: 0,
+                    idUrl: 'https://www.jd.com/',
+                    idView: 'uploads/msy.jpg.webp',
+                    span1: '天梭秒杀专场',
+                    span2: '全场低至7.5折',
+                    txt: '大牌闪购'
+                }, {
+                    id: 1,
+                    idUrl: 'https://www.jd.com/',
+                    idView: 'uploads/msy.jpg.webp',
+                    span1: '手机周四钜惠',
+                    span2: '爆款直降',
+                    txt: '品类秒杀'
                 }]
             }
         }
