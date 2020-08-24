@@ -3,22 +3,29 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/indexfoot.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
     <script src="js/vue.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
-    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index/head.css">
+    <link rel="stylesheet" href="css/index/daily_recom.css">
+    <link rel="stylesheet" href="css/index/indexfoot.css">
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="src/elementui-ui/lib/theme-chalk/index.css">
+    <!-- 引入组件库 -->
+    <script src="src/elementui-ui/lib/index.js"></script>
+    <title>仿京东</title>
 </head>
 
 <body>
     <div class="" id="app">
-        <div class="navigatio-bar clearfix">
+        <!--navigation-Head 头部基本栏，搜索部分，导航部分 -->
+        <div class="navigation-head">
+            <!-- 头部基本栏 -->
             <header>
                 <div class="w">
                     <div class="left">
-                        <img src="images/定位.png" alt=""><span>广东</span>
+                        <img src="images/定位.png" alt="">广东
                         <div class="none">
                             <div class="region1">
                                 <ul>
@@ -489,6 +496,7 @@
                     </div>
                 </div>
             </header>
+            <!-- 搜索部分 -->
             <main>
                 <div class="w">
                     <a href="index.html" class="index"></a>
@@ -503,37 +511,37 @@
                                     <div class="count">1</div>
                                     <a href="">我的购物车</a>
                                 </div>
-                                <div class="key-word">
-                                    <ul>
-                                        <li>
-                                            <a href="">智能巅峰日</a>
-                                        </li>
-                                        <li>
-                                            <a href="">厨房收纳</a>
-                                        </li>
-                                        <li>
-                                            <a href="">二手手机</a>
-                                        </li>
-                                        <li>
-                                            <a href="">香蕉</a>
-                                        </li>
-                                        <li>
-                                            <a href="">品质家具</a>
-                                        </li>
-                                        <li>
-                                            <a href="">自有品牌</a>
-                                        </li>
-                                        <li>
-                                            <a href="">199减100</a>
-                                        </li>
-                                        <li>
-                                            <a href="">智能巅峰</a>
-                                        </li>
-                                        <li>
-                                            <a href="">每100-50</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                            </div>
+                            <div class="key-word">
+                                <ul>
+                                    <li>
+                                        <a href="">智能巅峰日</a>
+                                    </li>
+                                    <li>
+                                        <a href="">厨房收纳</a>
+                                    </li>
+                                    <li>
+                                        <a href="">二手手机</a>
+                                    </li>
+                                    <li>
+                                        <a href="">香蕉</a>
+                                    </li>
+                                    <li>
+                                        <a href="">品质家具</a>
+                                    </li>
+                                    <li>
+                                        <a href="">自有品牌</a>
+                                    </li>
+                                    <li>
+                                        <a href="">199减100</a>
+                                    </li>
+                                    <li>
+                                        <a href="">智能巅峰</a>
+                                    </li>
+                                    <li>
+                                        <a href="">每100-50</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                         <div class="bottom">
@@ -572,10 +580,11 @@
                         </div>
                     </div>
                     <div class="two">
-                        <div class=""></div>
+                        <img src="images/二维码.png" alt="">
                     </div>
                 </div>
             </main>
+            <!-- 导航部分 -->
             <footer>
                 <div class="one" id="menu">
                     <ul>
@@ -1181,7 +1190,7 @@
                             <dl>
                                 <dt>热议</dt>
                                 <dd>
-                                    <a href="">????</a>
+                                    <a href="">???13312333333332312312321?</a>
                                 </dd>
                             </dl>
                             <dl>
@@ -1245,7 +1254,9 @@
                 </div>
             </footer>
         </div>
-        <div class="daily clearfix" id="app">
+        <!-- 京东秒杀到探索新生活 -->
+        <div class="daily-recom" id="app">
+            <!-- 京东秒杀 -->
             <div class="seckill">
                 <div class="left">
                     <a href="">
@@ -1317,7 +1328,7 @@
                         </ul>
                     </div>
                     <div class="center-right">
-                        <el-carousel height="240px" interval=0 indicator-position="none">
+                        <el-carousel height="24rem" interval=0 indicator-position="none">
                             <el-carousel-item v-for="imgMsR in imgListMSR" :key="imgMsR.id" height="100%">
                                 <a :href="imgMsR.idUrl" class="bigA">
                                     <img :src="imgMsR.idView" alt="">
@@ -1330,7 +1341,8 @@
                     </div>
                 </div>
             </div>
-            <div class="BrandSpecial">
+            <!-- 每日特价 -->
+            <div class="brandSpecial">
                 <div class="left">
                     <div class="head">
                         <a href="" class="title">每日特价</a>
@@ -1759,208 +1771,199 @@
                             </a>
                         </div>
                         <div class="right">
-                            <ul>
-                                <li class="liLeft">
-                                    <a href=""><img src="images/zst.webp" alt=""><span>资生堂自营专场</span></a>
-                                </li>
-                                <li>
-                                    <a href=""><img src="images/zst.webp" alt=""><span>资生堂自营专场</span></a>
-                                </li>
-                                <li class="liLeft">
-                                    <a href=""><img src="images/zst.webp" alt=""><span>资生堂自营专场</span></a>
-                                </li>
-                                <li>
-                                    <a href=""><img src="images/zst.webp" alt=""><span>资生堂自营专场</span></a>
-                                </li>
-                                <li class="liLeft">
-                                    <a href=""><img src="images/zst.webp" alt=""><span>资生堂自营专场</span></a>
-                                </li>
-                                <li>
-                                    <a href=""><img src="images/zst.webp" alt=""><span>资生堂自营专场</span></a>
-                                </li>
-                            </ul>
+                            <li class="liLeft">
+                                <a href=""><img src="images/zst.webp" alt=""><span>资生堂自营专场</span></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="images/zst.webp" alt=""><span>资生堂自营专场</span></a>
+                            </li>
+                            <li class="liLeft">
+                                <a href=""><img src="images/zst.webp" alt=""><span>资生堂自营专场</span></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="images/zst.webp" alt=""><span>资生堂自营专场</span></a>
+                            </li>
+                            <li class="liLeft">
+                                <a href=""><img src="images/zst.webp" alt=""><span>资生堂自营专场</span></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="images/zst.webp" alt=""><span>资生堂自营专场</span></a>
+                            </li>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- 探索新生活 -->
             <div class="discover">
                 <div class="left">
                     <div class="a"> <a href="">探索新生活</a></div>
                 </div>
                 <div class="center">
                     <div class="total1">
-                        <ul>
-                            <li class="liOne">
-                                <a href=""><img src="uploads/发现好货1.jpg.webp" alt="" class="OneTop"><span class="OneBot">发现好货发现好货发现好货发现好货</span></a>
-                            </li>
-                            <li class="liTwo">
-                                <a href=""><span class="twoTop">发现好货发现好货发现好货</span><img src="uploads/发现好货2png.webp" alt="" class="TwpBot"></a>
-                            </li>
-                            <li class="liOne">
-                                <a href=""><img src="uploads/发现好货1.jpg.webp" alt="" class="OneTop"><span class="OneBot">发现好货发现好货发现好货发现好货</span></a>
-                            </li>
-                            <li class="liTwo">
-                                <a href=""><span class="twoTop">发现好货发现好货发现好货发现好货</span><img src="uploads/发现好货2png.webp" alt="" class="TwpBot"></a>
-                            </li>
-                            <li class="liOne">
-                                <a href=""><img src="uploads/发现好货1.jpg.webp" alt="" class="OneTop"><span class="OneBot">发现好货发现好货发现好货发现好货</span></a>
-                            </li>
-                        </ul>
+                        <li class="liOne">
+                            <a href=""><img src="uploads/发现好货1.jpg.webp" alt="" class="OneTop"><span class="OneBot">发现好货发现好货发现好货发现好货</span></a>
+                        </li>
+                        <li class="liTwo">
+                            <a href=""><span class="twoTop">发现好货发现好货发现好货</span><img src="uploads/发现好货2png.webp" alt="" class="TwpBot"></a>
+                        </li>
+                        <li class="liOne">
+                            <a href=""><img src="uploads/发现好货1.jpg.webp" alt="" class="OneTop"><span class="OneBot">发现好货发现好货发现好货发现好货</span></a>
+                        </li>
+                        <li class="liTwo">
+                            <a href=""><span class="twoTop">发现好货发现好货发现好货发现好货</span><img src="uploads/发现好货2png.webp" alt="" class="TwpBot"></a>
+                        </li>
+                        <li class="liOne">
+                            <a href=""><img src="uploads/发现好货1.jpg.webp" alt="" class="OneTop"><span class="OneBot">发现好货发现好货发现好货发现好货</span></a>
+                        </li>
                     </div>
                     <div class="total2">
-                        <ul>
-                            <li class="liOne">
-                                <a href=""><img src="uploads/发现好货1.jpg.webp" alt="" class="OneTop"><span class="OneBot">发现好货发现好货发现好货发现好货</span></a>
-                            </li>
-                            <li class="liTwo">
-                                <a href=""><span class="twoTop">发现好货发现好货发现好货</span><img src="uploads/发现好货2png.webp" alt="" class="TwpBot"></a>
-                            </li>
-                            <li class="liOne">
-                                <a href=""><img src="uploads/发现好货1.jpg.webp" alt="" class="OneTop"><span class="OneBot">发现好货发现好货发现好货发现好货</span></a>
-                            </li>
-                            <li class="liTwo">
-                                <a href=""><span class="twoTop">发现好货发现好货发现好货发现好货</span><img src="uploads/发现好货2png.webp" alt="" class="TwpBot"></a>
-                            </li>
-                            <li class="liOne">
-                                <a href=""><img src="uploads/发现好货1.jpg.webp" alt="" class="OneTop"><span class="OneBot">发现好货发现好货发现好货发现好货</span></a>
-                            </li>
-                        </ul>
+
+                        <li class="liOne">
+                            <a href=""><img src="uploads/发现好货1.jpg.webp" alt="" class="OneTop"><span class="OneBot">发现好货发现好货发现好货发现好货</span></a>
+                        </li>
+                        <li class="liTwo">
+                            <a href=""><span class="twoTop">发现好货发现好货发现好货</span><img src="uploads/发现好货2png.webp" alt="" class="TwpBot"></a>
+                        </li>
+                        <li class="liOne">
+                            <a href=""><img src="uploads/发现好货1.jpg.webp" alt="" class="OneTop"><span class="OneBot">发现好货发现好货发现好货发现好货</span></a>
+                        </li>
+                        <li class="liTwo">
+                            <a href=""><span class="twoTop">发现好货发现好货发现好货发现好货</span><img src="uploads/发现好货2png.webp" alt="" class="TwpBot"></a>
+                        </li>
+                        <li class="liOne">
+                            <a href=""><img src="uploads/发现好货1.jpg.webp" alt="" class="OneTop"><span class="OneBot">发现好货发现好货发现好货发现好货</span></a>
+                        </li>
                     </div>
                     <div class="total3">
-                        <ul>
-                            <li class="liOne">
-                                <a href=""><img src="uploads/发现好货1.jpg.webp" alt="" class="OneTop"><span class="OneBot">发现好货发现好货发现好货发现好货</span></a>
-                            </li>
-                            <li class="liTwo">
-                                <a href=""><span class="twoTop">发现好货发现好货发现好货</span><img src="uploads/发现好货2png.webp" alt="" class="TwpBot"></a>
-                            </li>
-                            <li class="liOne">
-                                <a href=""><img src="uploads/发现好货1.jpg.webp" alt="" class="OneTop"><span class="OneBot">发现好货发现好货发现好货发现好货</span></a>
-                            </li>
-                            <li class="liTwo">
-                                <a href=""><span class="twoTop">发现好货发现好货发现好货发现好货</span><img src="uploads/发现好货2png.webp" alt="" class="TwpBot"></a>
-                            </li>
-                            <li class="liOne">
-                                <a href=""><img src="uploads/发现好货1.jpg.webp" alt="" class="OneTop"><span class="OneBot">发现好货发现好货发现好货发现好货</span></a>
-                            </li>
-                        </ul>
+                        <li class="liOne">
+                            <a href=""><img src="uploads/发现好货1.jpg.webp" alt="" class="OneTop"><span class="OneBot">发现好货发现好货发现好货发现好货</span></a>
+                        </li>
+                        <li class="liTwo">
+                            <a href=""><span class="twoTop">发现好货发现好货发现好货</span><img src="uploads/发现好货2png.webp" alt="" class="TwpBot"></a>
+                        </li>
+                        <li class="liOne">
+                            <a href=""><img src="uploads/发现好货1.jpg.webp" alt="" class="OneTop"><span class="OneBot">发现好货发现好货发现好货发现好货</span></a>
+                        </li>
+                        <li class="liTwo">
+                            <a href=""><span class="twoTop">发现好货发现好货发现好货发现好货</span><img src="uploads/发现好货2png.webp" alt="" class="TwpBot"></a>
+                        </li>
+                        <li class="liOne">
+                            <a href=""><img src="uploads/发现好货1.jpg.webp" alt="" class="OneTop"><span class="OneBot">发现好货发现好货发现好货发现好货</span></a>
+                        </li>
                     </div>
                 </div>
             </div>
+            <div class="Four-Columns"></div>
         </div>
-        <div class="Four-Columns"></div>
-    </div>
+        <!-- 底部 -->
+        <div class="index-foot">
+            <div class="foot_head">
+                <div class="w">
+                    <ul>
+                        <li>
+                            <div class="imga1"></div>
+                            <h5>正品保障</h5>
+                        </li>
+                        <li>
+                            <div class="imga2"></div>
+                            <h5>正品保障</h5>
+                        </li>
+                        <li>
+                            <div class="imga3"></div>
+                            <h5>正品保障</h5>
+                        </li>
+                        <li>
+                            <div class="imga3"></div>
+                            <h5>正品保障</h5>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foot_body">
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><a href="">购物流程</a></dd>
+                    <dd><a href="">会员介绍</a></dd>
+                    <dd><a href="">生活旅行/团购</a></dd>
+                    <dd><a href="">常见问题</a></dd>
+                    <dd><a href="">大家电</a></dd>
+                    <dd><a href="">联系客服</a></dd>
+                </dl>
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><a href="">购物流程</a></dd>
+                    <dd><a href="">会员介绍</a></dd>
+                    <dd><a href="">生活旅行/团购</a></dd>
+                    <dd><a href="">常见问题</a></dd>
+                    <dd><a href="">大家电</a></dd>
+                    <dd><a href="">联系客服</a></dd>
+                </dl>
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><a href="">购物流程</a></dd>
+                    <dd><a href="">会员介绍</a></dd>
+                    <dd><a href="">生活旅行/团购</a></dd>
+                    <dd><a href="">常见问题</a></dd>
+                    <dd><a href="">大家电</a></dd>
+                    <dd><a href="">联系客服</a></dd>
+                </dl>
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><a href="">购物流程</a></dd>
+                    <dd><a href="">会员介绍</a></dd>
+                    <dd><a href="">生活旅行/团购</a></dd>
+                    <dd><a href="">常见问题</a></dd>
+                    <dd><a href="">大家电</a></dd>
+                    <dd><a href="">联系客服</a></dd>
+                </dl>
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><a href="">购物流程</a></dd>
+                    <dd><a href="">会员介绍</a></dd>
+                    <dd><a href="">生活旅行/团购</a></dd>
+                    <dd><a href="">常见问题</a></dd>
+                    <dd><a href="">大家电</a></dd>
+                    <dd><a href="">联系客服</a></dd>
+                </dl>
+                <div class="details">
+                    <h4>京东自营覆盖区县</h4>
+                    <h5>京东已向全国2661个区县提供自营恭送服务，支持货到付款、POS机刷卡和售后上门服务。</h5>
+                    <a href="">查看详情></a>
+                </div>
+            </div>
+            <div class="foot_foot">
+                <div class="">
+                    <li>关于我们</li>
+                    <li>|</li>
+                    <li>联系我们</li>
+                    <li>|</li>
+                    <li>联系客服</li>
+                    <li>|</li>
+                    <li>商家入驻</li>
+                    <li>|</li>
+                    <li>营销中心</li>
+                    <li>|</li>
+                    <li>手机品优购</li>
+                    <li>|</li>
+                    <li>友情链接</li>
+                    <li>|</li>
+                    <li>销售联盟</li>
+                    <li>|</li>
+                    <li>品优购社区</li>
+                    <li>|</li>
+                    <li>品优购公益</li>
+                    <li>|</li>
+                    <li>English Site</li>
+                    <li>|</li>
+                    <li>Contact U</li>
+                </div>
+                <p class="p1">地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000 传真：010-82935100 邮箱: zhanghj+itcast.cn</p>
+                <p class="p2">京ICP备08001421号京公网安备110108007702</p>
+
+            </div>
+        </div>
     </div>
 
-    <div class="index-foot">
-        <div class="foot_head">
-            <ul>
-                <li>
-                    <div class="imga1"></div>
-                    <h5>正品保障</h5>
-                    <h4>正品保障，提供发票</h4>
-                </li>
-                <li>
-                    <div class="imga2"></div>
-                    <h5>正品保障</h5>
-                    <h4>正品保障，提供发票</h4>
-                </li>
-                <li>
-                    <div class="imga3"></div>
-                    <h5>正品保障</h5>
-                    <h4>正品保障，提供发票</h4>
-                </li>
-                <li>
-                    <div class="imga3"></div>
-                    <h5>正品保障</h5>
-                    <h4>正品保障，提供发票</h4>
-                </li>
-                <li>
-                    <div class="imga3"></div>
-                    <h5>正品保障</h5>
-                    <h4>正品保障，提供发票</h4>
-                </li>
-            </ul>
-        </div>
-        <div class="foot_body">
-            <dl>
-                <dt>购物指南</dt>
-                <dd><a href="">购物流程</a></dd>
-                <dd><a href="">会员介绍</a></dd>
-                <dd><a href="">生活旅行/团购</a></dd>
-                <dd><a href="">常见问题</a></dd>
-                <dd><a href="">大家电</a></dd>
-                <dd><a href="">联系客服</a></dd>
-            </dl>
-            <dl>
-                <dt>购物指南</dt>
-                <dd><a href="">购物流程</a></dd>
-                <dd><a href="">会员介绍</a></dd>
-                <dd><a href="">生活旅行/团购</a></dd>
-                <dd><a href="">常见问题</a></dd>
-                <dd><a href="">大家电</a></dd>
-                <dd><a href="">联系客服</a></dd>
-            </dl>
-            <dl>
-                <dt>购物指南</dt>
-                <dd><a href="">购物流程</a></dd>
-                <dd><a href="">会员介绍</a></dd>
-                <dd><a href="">生活旅行/团购</a></dd>
-                <dd><a href="">常见问题</a></dd>
-                <dd><a href="">大家电</a></dd>
-                <dd><a href="">联系客服</a></dd>
-            </dl>
-            <dl>
-                <dt>购物指南</dt>
-                <dd><a href="">购物流程</a></dd>
-                <dd><a href="">会员介绍</a></dd>
-                <dd><a href="">生活旅行/团购</a></dd>
-                <dd><a href="">常见问题</a></dd>
-                <dd><a href="">大家电</a></dd>
-                <dd><a href="">联系客服</a></dd>
-            </dl>
-            <dl>
-                <dt>购物指南</dt>
-                <dd><a href="">购物流程</a></dd>
-                <dd><a href="">会员介绍</a></dd>
-                <dd><a href="">生活旅行/团购</a></dd>
-                <dd><a href="">常见问题</a></dd>
-                <dd><a href="">大家电</a></dd>
-                <dd><a href="">联系客服</a></dd>
-            </dl>
-            <!-- <dl class="erweima">
-                </dl> -->
-        </div>
-        <div class="foot_foot">
-            <ul>
-                <li>关于我们</li>
-                <li>|</li>
-                <li>联系我们</li>
-                <li>|</li>
-                <li>联系客服</li>
-                <li>|</li>
-                <li>商家入驻</li>
-                <li>|</li>
-                <li>营销中心</li>
-                <li>|</li>
-                <li>手机品优购</li>
-                <li>|</li>
-                <li>友情链接</li>
-                <li>|</li>
-                <li>销售联盟</li>
-                <li>|</li>
-                <li>品优购社区</li>
-                <li>|</li>
-                <li>品优购公益</li>
-                <li>|</li>
-                <li>English Site</li>
-                <li>|</li>
-                <li>Contact U</li>
-            </ul>
-            <p class="p1">地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000 传真：010-82935100 邮箱: zhanghj+itcast.cn</p>
-            <p class="p2">京ICP备08001421号京公网安备110108007702</p>
-        </div>
-    </div>
 </body>
 <script>
     new Vue({
@@ -1990,9 +1993,6 @@
                 }, {
                     id: 6,
                     idView: 'uploads/b7.jpg'
-                }, {
-                    id: 7,
-                    idView: 'uploads/b8.jpg'
                 }],
                 imgListTop: [{
                     id: 0,

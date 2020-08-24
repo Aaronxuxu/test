@@ -1,0 +1,673 @@
+.daily-recom {
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.daily-recom .seckill,
+.daily-recom .discover,
+.daily-recom .brandSpecial {
+    display: flex;
+    width: 80%;
+    height: 26rem;
+    max-width: 119rem;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.daily-recom .seckill .left,
+.daily-recom .discover .left {
+    float: left;
+    position: relative;
+    width: 15%;
+    height: 100%;
+    max-width: 19rem;
+    background: url(../../images/ms.png) no-repeat;
+    background-position: 50%;
+}
+
+.daily-recom .discover .left {
+    background: url(../../images/fshh.png) no-repeat;
+    background-position: 50%;
+}
+
+.daily-recom .seckill .left a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.daily-recom .seckill .left a h3 {
+    position: absolute;
+    width: 100%;
+    top: 15%;
+    text-align: center;
+    font-size: 2.8rem;
+    color: white;
+}
+
+.daily-recom .seckill .left a .time {
+    position: absolute;
+    width: 100%;
+    bottom: 15%;
+    color: white;
+    text-align: center;
+}
+
+.daily-recom .seckill .left a .time .H {
+    width: 100%;
+    height: 3.5rem;
+}
+
+.daily-recom .seckill .left a .time .H h2 {
+    float: left;
+    font-size: 2.5rem;
+    width: 48%;
+    text-align: right;
+    margin-right: 4%;
+}
+
+.daily-recom .seckill .left a .time .H h5 {
+    float: left;
+    width: 48%;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.daily-recom .seckill .left a .time .timming {
+    width: 100%;
+    height: 3rem;
+    margin-top: .5rem;
+    font-size: 2rem;
+}
+
+.daily-recom .seckill .left a .time .timming span:nth-child(1),
+.daily-recom .seckill .left a .time .timming span:nth-child(3),
+.daily-recom .seckill .left a .time .timming span:nth-child(5) {
+    padding: 0.5rem;
+    background-color: black;
+}
+
+.daily-recom .seckill .center,
+.daily-recom .discover .center {
+    float: left;
+    position: relative;
+    width: 84%;
+    height: 100%;
+    background-color: white;
+}
+
+.daily-recom .seckill .center .center-left,
+.daily-recom .seckill .center .center-right {
+    float: left;
+    width: 80%;
+    height: 100%;
+}
+
+.daily-recom .seckill .center .center-right {
+    box-sizing: border-box;
+    width: 20%;
+    height: 100%;
+    padding: 1rem;
+}
+
+.daily-recom .seckill .center .center-left li {
+    box-sizing: border-box;
+    width: 25%;
+    max-width: 22rem;
+    height: 26rem;
+    padding: 1rem;
+}
+
+.daily-recom .seckill .center .center-left li :hover {
+    opacity: .85;
+}
+
+.daily-recom .seckill .center .center-left li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 20rem;
+}
+
+.daily-recom .seckill .center .center-left li a img {
+    position: relative;
+    width: 14rem;
+    height: 14rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.daily-recom .seckill .center .center-left li a p {
+    position: relative;
+    max-width: 18rem;
+    height: 2rem;
+    top: 2rem;
+    font-weight: 400;
+    font-size: 1.4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 2rem;
+}
+
+.daily-recom .seckill .center .center-left li a .price {
+    position: relative;
+    width: 100%;
+    height: 3.8rem;
+    max-width: 18rem;
+    /* height: 60px; */
+    top: 3rem;
+    border: #c81623 .1rem solid;
+    overflow: hidden;
+}
+
+.daily-recom .seckill .center .center-left li a .price span {
+    display: block;
+    float: left;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+}
+
+.daily-recom .seckill .center .center-left li a .price span i {
+    font-style: normal;
+}
+
+.daily-recom .seckill .center .center-left li a .price span:nth-child(1) {
+    width: 60%;
+    background-color: #c81623;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.daily-recom .seckill .center .center-left li a .price span:nth-child(1)::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    left: 50%;
+    border-bottom: 3.8rem solid white;
+    border-left: 1.8rem solid transparent;
+}
+
+.daily-recom .seckill .center .center-left li a .price span:nth-child(2) {
+    width: 40%;
+    font-size: 1.5rem;
+    text-decoration: line-through
+}
+
+.daily-recom .seckill .center .center-right .bigA {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.daily-recom .seckill .center .center-right .bigA img {
+    position: relative;
+    width: 13rem;
+    height: 13rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.daily-recom .seckill .center .center-right .bigA span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    top: 1rem;
+    text-align: center;
+    color: gray;
+    font-size: 1.7rem;
+}
+
+.daily-recom .seckill .center .center-right .bigA .span2 {
+    font-size: 1.8rem;
+    color: black;
+    font-weight: 700;
+}
+
+.daily-recom .seckill .center .center-right .bigA .button {
+    position: relative;
+    width: 40%;
+    height: 3rem;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 3rem;
+    color: #c81623;
+    text-align: center;
+    border: .1rem solid #c81623;
+    border-radius: 2.5rem;
+    font-size: 1.5rem;
+}
+
+.daily-recom .seckill .center .center-right .bigA .button:hover {
+    background-color: #c81623;
+    color: white;
+}
+
+.daily-recom .brandSpecial {
+    position: relative;
+    height: 34rem;
+    margin: 3rem auto;
+}
+
+.daily-recom .brandSpecial .left,
+.daily-recom .brandSpecial .right {
+    box-sizing: border-box;
+    width: 49%;
+    height: 100%;
+    background-color: white;
+    padding: 1rem;
+}
+
+.daily-recom .brandSpecial .left i {
+    font-style: normal;
+}
+
+.daily-recom .brandSpecial .left .head,
+.daily-recom .brandSpecial .right .head {
+    position: relative;
+    width: 100%;
+    height: 6rem;
+    line-height: 6rem;
+}
+
+.daily-recom .brandSpecial .left .head .title,
+.daily-recom .brandSpecial .right .head a {
+    display: block;
+    float: left;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.daily-recom .brandSpecial .left .head .title::after,
+.daily-recom .brandSpecial .right .head::after {
+    position: absolute;
+    content: "";
+    width: 2.8rem;
+    height: 2.8rem;
+    background: url(../../images/rightB.png) no-repeat;
+    background-size: 2.8rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.daily-recom .brandSpecial .left .nav {
+    float: right;
+    width: auto;
+    height: 6rem;
+}
+
+.daily-recom .brandSpecial .left .nav li {
+    margin-left: 3rem;
+}
+
+.daily-recom .brandSpecial .left .nav li a {
+    font-size: 1.3rem;
+}
+
+.daily-recom .brandSpecial .left .nav li:hover .none {
+    display: block;
+}
+
+.daily-recom .brandSpecial .left .nav li:nth-child(1) .none {
+    display: block;
+}
+
+.daily-recom .brandSpecial .left .nav .none {
+    position: absolute;
+    width: 100%;
+    height: 26rem;
+    left: 0;
+    top: 6rem;
+    padding: 0;
+    border: 0;
+    margin-left: 0;
+}
+
+.daily-recom .brandSpecial .left .nav .none .left {
+    float: left;
+    width: 30%;
+    background-color: #f4f4f4;
+    padding: 0;
+}
+
+.daily-recom .brandSpecial .left .nav .none .left a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.daily-recom .brandSpecial .left .nav .none .left a img {
+    position: absolute;
+    width: 12rem;
+    height: 12rem;
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.daily-recom .brandSpecial .left .nav .none .left a h6 {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 62%;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: normal;
+}
+
+.daily-recom .brandSpecial .left .nav .none .left a .price {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 70%;
+    justify-content: center;
+}
+
+.daily-recom .brandSpecial .left .nav .none .left a .price .present,
+.daily-recom .brandSpecial .left .nav .none .left a .price .original {
+    display: block;
+    /* width: 50%; */
+    height: auto;
+}
+
+.daily-recom .brandSpecial .left .nav .none .left a .price .present {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #c81623;
+    margin-right: .5rem;
+}
+
+.daily-recom .brandSpecial .left .nav .none .left a .price .original {
+    color: gray;
+    font-size: 1.4rem;
+    text-decoration: line-through;
+}
+
+.daily-recom .brandSpecial .left .nav .none .right {
+    float: left;
+    width: 70%;
+    height: 26rem;
+    padding: 0;
+}
+
+.daily-recom .brandSpecial .left .nav .none .right ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.daily-recom .brandSpecial .left .nav .none .right li {
+    width: 45%;
+    height: 11rem;
+    margin: 0;
+}
+
+.daily-recom .brandSpecial .left .nav .none .right li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.daily-recom .brandSpecial .left .nav .none .right li a img {
+    position: absolute;
+    width: 45%;
+    height: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.daily-recom .brandSpecial .left .nav .none .right li a .jieshao {
+    position: absolute;
+    width: 45%;
+    line-height: normal;
+    left: 45%;
+}
+
+.daily-recom .brandSpecial .left .nav .none .right li a .jieshao h5 {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.daily-recom .brandSpecial .left .nav .none .right li a .jieshao .price {
+    width: 100%;
+    height: auto;
+}
+
+.daily-recom .brandSpecial .left .nav .none .right li a .jieshao .price .present {
+    display: block;
+    width: 100%;
+    height: auto;
+    color: #c81623;
+    font-size: 2rem;
+}
+
+.daily-recom .brandSpecial .left .nav .none .right li a .jieshao .price .original {
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+    color: gray;
+    text-decoration: line-through;
+}
+
+.daily-recom .brandSpecial .right .main {
+    display: flex;
+    width: 100%;
+    height: 260px;
+    justify-content: space-between;
+}
+
+.daily-recom .brandSpecial .right .main .left,
+.daily-recom .brandSpecial .right .main .right {
+    width: 48%;
+    height: 26rem;
+    padding: 0;
+}
+
+.daily-recom .brandSpecial .right .main .right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.daily-recom .brandSpecial .right .main .left a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #f5f8f5;
+}
+
+.daily-recom .brandSpecial .right .main .left a .icon {
+    position: relative;
+    width: 10rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.daily-recom .brandSpecial .right .main .left a .icon-h5,
+.daily-recom .brandSpecial .right .main .left a div {
+    position: relative;
+    width: 100%;
+    /* height: auto; */
+    left: 50%;
+    font-size: 1.7rem;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.daily-recom .brandSpecial .right .main .left a div {
+    width: 85%;
+    text-align: center;
+}
+
+.daily-recom .brandSpecial .right .main .left a div .icon-span1,
+.icon-span2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.daily-recom .brandSpecial .right .main .left a div .icon-span1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.daily-recom .brandSpecial .right .main .left a .icon-image {
+    position: relative;
+    width: 15rem;
+    top: .8rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.daily-recom .brandSpecial .right .main .right li {
+    width: 50%;
+}
+
+.daily-recom .brandSpecial .right .main .right .liLeft a {
+    border-right: 1px solid #d4d4d4;
+}
+
+.daily-recom .brandSpecial .right .main .right li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.daily-recom .brandSpecial .right .main .right li a img {
+    width: 60%;
+    height: auto;
+}
+
+.daily-recom .brandSpecial .right .main .right li a span {
+    display: block;
+    font-size: 13px;
+}
+
+.daily-recom .discover .left .a {
+    width: 90%;
+    height: 8rem;
+    background-color: white;
+    color: black;
+    border-radius: 0 0 5rem;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.daily-recom .discover .left .a a {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 10rem;
+    text-align: center;
+}
+
+.daily-recom .discover .center {
+    position: relative;
+    height: 24rem;
+    overflow: hidden;
+    padding: 1rem 0;
+}
+
+.daily-recom .discover .center .total1,
+.daily-recom .discover .center .total2,
+.daily-recom .discover .center .total3 {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 24rem;
+    left: 0;
+    justify-content: space-between;
+    /* transform: translateX(-50%); */
+    animation: FSMove 5s linear;
+    animation-fill-mode: forwards;
+}
+
+.daily-recom .discover .center .total2 {
+    transform: translateX(100%);
+    animation: SSMove 10s .4s linear infinite;
+}
+
+.daily-recom .discover .center .total3 {
+    transform: translateX(100%);
+    animation: SSMove 10s 5.5s linear infinite;
+}
+
+.daily-recom .discover .center:hover .total3,
+.daily-recom .discover .center:hover .total2,
+.daily-recom .discover .center:hover .total1 {
+    animation-play-state: paused;
+}
+
+.daily-recom .discover .center div li {
+    width: 20%;
+    height: 24rem;
+}
+
+.daily-recom .discover .center div li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.daily-recom .discover .center div li span {
+    display: block;
+    height: 5rem;
+    max-width: 15rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 5rem;
+    text-align: center;
+}
+
+.daily-recom .discover .center div li img {
+    width: 15rem;
+    height: 15rem;
+}
+
+.daily-recom .discover .center div .liOne a img,
+.daily-recom .discover .center div .liTwo a span {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.daily-recom .discover .center div .liOne a span,
+.daily-recom .discover .center div .liTwo a img {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@keyframes FSMove {
+    0% {}
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes SSMove {
+    0% {}
+    100% {
+        transform: translateX(-100%);
+    }
+}

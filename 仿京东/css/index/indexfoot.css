@@ -1,0 +1,150 @@
+.index-foot {
+    width: 100%;
+    margin-top: 3rem;
+    height: 42rem;
+    background-color: #f5f5f5;
+}
+
+.index-foot .foot_head {
+    width: 100%;
+    height: 5rem;
+    border-bottom: .1rem solid #666666;
+    padding-bottom: 1.5rem;
+}
+
+.index-foot .foot_head .w {
+    height: 5rem;
+}
+
+.index-foot .foot_head li {
+    display: flex;
+    float: left;
+    width: 25%;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-foot .foot_head li .imga1,
+.index-foot .foot_head li .imga2,
+.index-foot .foot_head li .imga3 {
+    float: left;
+    width: 5rem;
+    height: 5rem;
+    background: url(../../images/icons.png) no-repeat;
+}
+
+.index-foot .foot_head li .imga1 {
+    background-position: -253px -3px;
+}
+
+.index-foot .foot_head li .imga2 {
+    background-position: -255px -54px;
+}
+
+.index-foot .foot_head li .imga3 {
+    background-position: -257px -106px;
+}
+
+.index-foot .foot_head li h5 {
+    margin-left: .8rem;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.index-foot .foot_body {
+    display: flex;
+    width: 80%;
+    max-width: 119rem;
+    height: 20rem;
+    border-bottom: .1rem solid gray;
+    margin: auto;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.index-foot .foot_body dl {
+    width: 30%;
+    height: 100%;
+}
+
+.index-foot .foot_body dl dt {
+    font-size: 1.8rem;
+    color: black;
+}
+
+.index-foot .foot_body dl dd {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.index-foot .foot_body .details {
+    width: 30%;
+    height: 100%;
+}
+
+.index-foot .foot_body .details h4 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.index-foot .foot_body .details h5 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.index-foot .foot_body .details a {
+    display: block;
+    margin-top: 1rem;
+    text-align: right;
+}
+
+
+/*     
+.index-foot .foot_body .erweima {
+    margin: 14px 0 0 28px;
+    text-align: center;
+}
+
+.index-foot .foot_body .erweima dd {
+    margin-top: 20px;
+} */
+
+.index-foot .foot_foot {
+    width: 80%;
+    height: 10.5rem;
+    max-width: 119rem;
+    text-align: center;
+    color: #666666;
+    margin: auto;
+}
+
+.index-foot .foot_foot div {
+    display: flex;
+    width: 100%;
+    height: 2rem;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+
+.index-foot .foot_foot div li {
+    float: left;
+    height: 2rem;
+    font-size: 1.2rem;
+    margin: 0 .5rem;
+}
+
+.index-foot .foot_foot .p1,
+.index-foot .foot_foot .p2 {
+    width: 100%;
+    max-width: 119rem;
+    font-size: 1.2rem;
+    margin: auto;
+}
+
+.index-foot .foot_foot .p2 {
+    margin-top: 1.5rem;
+}

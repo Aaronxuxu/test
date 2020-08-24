@@ -1,0 +1,920 @@
+.navigation-head {
+    background-color: #f4f4f4;
+    margin: auto;
+}
+
+.navigation-head header {
+    background-color: #e3e4e5;
+    height: 3rem;
+}
+
+.navigation-head header .w {
+    height: 3rem;
+}
+
+.navigation-head header .w .left {
+    float: left;
+    position: relative;
+    width: 5.8rem;
+    height: 3rem;
+    /* background-color: black; */
+    margin: 0;
+    line-height: 3rem;
+    border: .1rem solid transparent;
+    border-top: none;
+    border-bottom: none;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.navigation-head header .left .none {
+    width: 35rem;
+    height: 45rem;
+    background-color: white;
+    border: .1rem solid gray;
+    border-top: none;
+    cursor: default;
+    z-index: 20;
+    margin-left: -0.1rem;
+}
+
+.navigation-head header .left:hover {
+    background-color: white;
+    border-color: gray;
+}
+
+.navigation-head header .left:hover .none {
+    display: block;
+}
+
+.navigation-head header .left .none .region1 {
+    width: 100%;
+    height: 50%;
+    border-bottom: .1rem dotted gray;
+}
+
+.navigation-head header .left .none .region1 li {
+    width: 20%;
+}
+
+.navigation-head header .left .none .region1 li a {
+    display: block;
+    color: gray;
+    font-size: 1.2rem;
+}
+
+.navigation-head header .left .none .region1 li:hover {
+    background-color: #f4f4f4;
+}
+
+.navigation-head header .left .none .region2,
+.navigation-head header .left .none .region3 {
+    width: 100%;
+    height: 25%;
+}
+
+.navigation-head header .left .none .region2 h5,
+.navigation-head header .left .none .region3 h5 {
+    color: gray;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+.navigation-head header .left .none .region2 a,
+.navigation-head header .left .none .region3 a {
+    float: left;
+    display: block;
+    width: 50%;
+    text-align: left;
+    color: gray;
+    margin-top: .5rem;
+    font-size: 1.2rem;
+}
+
+.navigation-head header .left .none .region3 a {
+    margin: 0;
+}
+
+.navigation-head header .left .none .region3 a img {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.navigation-head header .right {
+    float: right;
+    height: 3rem;
+    /* min-width: 700px; */
+}
+
+.navigation-head header .right li {
+    position: relative;
+    height: 3rem;
+    line-height: 3rem;
+    margin: 0 .5rem;
+    border: .05rem solid transparent;
+    border-top: none;
+    border-bottom: none;
+    z-index: 20;
+}
+
+.navigation-head header .right .space {
+    height: 1rem;
+    margin-top: 1rem;
+    border: 0.05rem solid gray;
+}
+
+.navigation-head header .right .myjd::after,
+.navigation-head header .right .shop::after,
+.navigation-head header .right .server::after,
+.navigation-head header .right .nav::after {
+    float: left;
+    content: '';
+    width: 1.2rem;
+    height: 1.2rem;
+    background: url(../../images/arrow-down.png) no-repeat;
+    background-size: 1.2rem;
+    margin: .9rem .5rem;
+}
+
+.navigation-head header .right li a,
+.navigation-head header .right li span {
+    font-size: 1.2rem;
+    color: gray;
+}
+
+.navigation-head header .right .login a:nth-of-type(2) {
+    color: #f10215;
+}
+
+.navigation-head header .right .myjd a,
+.navigation-head header .right .shop a,
+.navigation-head header .right .server span,
+.navigation-head header .right .nav span {
+    float: left;
+}
+
+.navigation-head header .right .myjd .none {
+    width: 30rem;
+    height: 20rem;
+}
+
+.navigation-head header .right .shop .none {
+    width: 15rem;
+    height: 10rem;
+}
+
+.navigation-head header .right .server .none {
+    width: 15rem;
+    height: 25rem;
+    right: 0;
+    margin: 0 -.05rem 0 0;
+}
+
+.navigation-head header .right .nav .none {
+    width: 132.1rem;
+    height: 18rem;
+    right: -8.5rem;
+}
+
+.navigation-head header .right .myjd:hover,
+.navigation-head header .right .shop:hover,
+.navigation-head header .right .server:hover,
+.navigation-head header .right .nav:hover,
+.navigation-head header .right .phone:hover {
+    border-color: gray;
+    background-color: white;
+}
+
+.navigation-head header .right .myjd:hover .none,
+.navigation-head header .right .shop:hover .none,
+.navigation-head header .right .server:hover .none,
+.navigation-head header .right .nav:hover .none,
+.navigation-head header .right .phone:hover .none {
+    display: block;
+}
+
+.navigation-head header .right .myjd .none .one {
+    width: 100%;
+    height: 55%;
+    border-bottom: .1rem dotted gray;
+}
+
+.navigation-head header .right .myjd .none .two {
+    width: 100%;
+    height: 45%;
+    margin-top: 1rem;
+}
+
+.navigation-head header .right .myjd .none .one li,
+.navigation-head header .right .myjd .none .two li,
+.navigation-head header .right .shop .none li,
+.navigation-head header .right .server .none li,
+.navigation-head header .right .nav .none li {
+    width: 50%;
+    border: none;
+    margin: .3rem 0;
+}
+
+.navigation-head header .right .server .none .one {
+    width: 100%;
+    height: 55%;
+}
+
+.navigation-head header .right .server .none .two {
+    width: 100%;
+    height: 45%;
+}
+
+.navigation-head header .right .server .none .one li {
+    height: 2.75rem;
+    margin: 0;
+}
+
+.navigation-head header .right .server .none .two li {
+    height: 2.82rem;
+    margin: 0;
+}
+
+.navigation-head header .right .server .none .one h5 {
+    height: 20%;
+    font-size: 1.5rem;
+}
+
+.navigation-head header .right .server .none .two h5 {
+    height: 25%;
+    font-size: 1.5rem;
+}
+
+.navigation-head header .right .nav .none .one,
+.navigation-head header .right .nav .none .two,
+.navigation-head header .right .nav .none .three,
+.navigation-head header .right .nav .none .four {
+    float: left;
+    width: 20%;
+    height: 100%;
+    border-left: .1rem solid gray;
+    padding-left: 2rem;
+}
+
+.navigation-head header .right .nav .none h5 {
+    width: 100%;
+    height: 3rem;
+}
+
+.navigation-head header .right .nav .none .one {
+    width: 30%;
+    border: none;
+    padding: 0;
+}
+
+.navigation-head header .right .nav .none .one li {
+    width: 25%;
+    margin: 0;
+}
+
+.navigation-head header .right .nav .none .two li,
+.navigation-head header .right .nav .none .three li,
+.navigation-head header .right .nav .none .four li {
+    width: 33.3%;
+    margin: 0;
+}
+
+.navigation-head main {
+    height: 18rem;
+    background-color: white;
+}
+
+.navigation-head main .w {
+    height: 100%;
+}
+
+.navigation-head main .index {
+    display: block;
+    position: relative;
+    float: left;
+    width: 12rem;
+    height: 12rem;
+    background: url(../../images/sprite.png) no-repeat -36px 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.navigation-head main .one {
+    float: left;
+    position: relative;
+    width: 92rem;
+    height: 100%;
+}
+
+.navigation-head main .one .top {
+    width: 100%;
+    height: 11.7rem;
+}
+
+.navigation-head main .one .top .search {
+    position: relative;
+    width: 100%;
+    height: 8rem;
+}
+
+.navigation-head main .one .top .search input {
+    position: absolute;
+    width: 55rem;
+    height: 3.5rem;
+    /* border-width: ; */
+    padding: 0 0 0 1.5rem;
+    left: 6rem;
+    bottom: 0;
+    border: .2rem solid #f10215;
+    border-right: none;
+}
+
+.navigation-head main .one .top .search .camera {
+    position: absolute;
+    display: block;
+    width: 3.2rem;
+    height: 3.2rem;
+    bottom: 0;
+    left: 61rem;
+    background: url(../../images/相机.png) no-repeat center;
+    border: .15rem solid #f10215;
+    border-left: none;
+    border-right: none;
+}
+
+.navigation-head main .one .top .search .camera:hover {
+    background: url(../../images/相机2.png) no-repeat center;
+}
+
+.navigation-head main .one .top .search button {
+    position: absolute;
+    width: 7rem;
+    height: 3.5rem;
+    left: 64.2rem;
+    bottom: 0;
+    background-color: #f10215;
+    border-width: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.navigation-head main .one .top .search button:hover {
+    background-color: #c81623;
+}
+
+.navigation-head main .one .top .search .cart {
+    position: absolute;
+    width: 16.6rem;
+    height: 3.3rem;
+    left: 73rem;
+    bottom: 0;
+    border: .1rem solid gray;
+}
+
+.navigation-head main .one .top .search .cart:hover {
+    border-color: #f10215;
+}
+
+.navigation-head main .one .top .search .cart img {
+    position: absolute;
+    width: 2.4rem;
+    height: 2.4rem;
+    top: 50%;
+    left: 2rem;
+    transform: translate(0, -50%);
+}
+
+.navigation-head main .one .top .search .cart .count {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    left: 3.2rem;
+    border-radius: 1rem;
+    background-color: #f10215;
+    text-align: center;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.navigation-head main .one .top .search .cart a {
+    position: absolute;
+    color: #f10215;
+    left: 6rem;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 1.4rem;
+}
+
+.navigation-head main .one .top .key-word {
+    position: relative;
+    width: 68rem;
+    height: 2.5rem;
+    left: 6rem;
+}
+
+.navigation-head main .one .top .key-word li {
+    margin-right: 15px;
+}
+
+.navigation-head main .one .top .key-word li a {
+    color: gray;
+    font-size: 1.4rem;
+}
+
+.navigation-head main .one .top .key-word li a:hover {
+    color: #c81623;
+}
+
+.navigation-head main .one .top .key-word li:nth-child(1) a {
+    color: #f10215;
+}
+
+.navigation-head main .one .bottom {
+    width: 100%;
+    height: 6.3rem;
+    line-height: 6.3rem;
+}
+
+.navigation-head main .one .bottom li {
+    width: 10%;
+    text-align: center;
+}
+
+.navigation-head main .one .bottom li a {
+    font-size: 1.6rem;
+}
+
+.navigation-head main .one .bottom li:nth-child(1) a,
+.navigation-head main .one .bottom li:nth-child(2) a {
+    font-weight: 700;
+    color: #c81623;
+}
+
+.navigation-head main .two {
+    position: relative;
+    float: left;
+    width: 10rem;
+    height: 10rem;
+    top: 50%;
+    left: 1rem;
+    box-shadow: 0 0 .8rem 0 black;
+    transform: translateY(-50%);
+}
+
+.navigation-head main .two img {
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navigation-head footer {
+    display: flex;
+    position: relative;
+    width: 80%;
+    height: 47rem;
+    max-width: 119rem;
+    margin: 3rem auto;
+    justify-content: space-between;
+}
+
+.navigation-head footer .one,
+.navigation-head footer .two,
+.navigation-head footer .three,
+.navigation-head footer .four {
+    /* position: relative;
+        float: left; */
+    height: 47rem;
+    background-color: white;
+    /* overflow: hidden; */
+}
+
+.navigation-head footer .one {
+    height: 45rem;
+    padding: 1rem 0;
+    z-index: 10;
+}
+
+.navigation-head footer .three {
+    background-color: transparent;
+}
+
+.navigation-head footer .one,
+.navigation-head footer .three,
+.navigation-head footer .four {
+    width: 16%;
+}
+
+.navigation-head footer .two {
+    width: 49%;
+}
+
+.navigation-head footer .one .navli {
+    /* position: relative; */
+    width: 100%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+}
+
+.navigation-head footer .one ul .navli a,
+.navigation-head footer .one ul .navli span {
+    font-size: 1.3rem;
+}
+
+.navigation-head footer .one ul .navli a:nth-child(1) {
+    margin-left: 1rem;
+}
+
+.navigation-head footer .one ul .navli:hover {
+    background-color: #e3e4e5;
+}
+
+.navigation-head footer .one .none {
+    width: 84%;
+    height: 46.8rem;
+    padding: 0;
+    top: 0;
+    left: 16%;
+    border: .1rem solid #d4d4d4;
+    box-shadow: 0 0 .3rem .1rem gray;
+    min-width: 99rem;
+    /* display: block; */
+}
+
+.navigation-head footer .one .navli:hover .none {
+    display: block;
+}
+
+.navigation-head footer .one .none .left,
+.navigation-head footer .one .none .right {
+    float: left;
+    box-sizing: border-box;
+    width: 80%;
+    height: 100%;
+    margin: 0;
+    padding: 2rem;
+}
+
+.navigation-head footer .one .none .right {
+    width: 20%;
+    padding: 2rem 2rem 2rem 0;
+    /* background-color: black; */
+}
+
+.navigation-head footer .one .none .left .top {
+    width: 100%;
+    height: 10%;
+}
+
+.navigation-head footer .one .none .left .top li {
+    text-align: center;
+    width: auto;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    margin: .35rem 0 0 2rem;
+    background-color: black;
+}
+
+.navigation-head footer .one .none .left .top li a {
+    float: left;
+    display: block;
+    height: 100%;
+    margin: 0;
+    padding: 0 0 0 1.5rem;
+    color: white;
+}
+
+.navigation-head footer .one .none .left .top li:hover {
+    background-color: #c81623;
+}
+
+.navigation-head footer .one .none .left .top li::after {
+    float: left;
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    background: url(../../images/dyh.png);
+    background-size: 100%;
+    margin-top: .75rem;
+}
+
+.navigation-head footer .one .none .left .dl {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    height: 90%;
+    padding: 1rem 0 0 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navigation-head footer .one .none .left .dl dl {
+    width: 100%;
+}
+
+.navigation-head footer .one .none .left .dl dl dt {
+    float: left;
+    width: 10%;
+    text-align: right;
+}
+
+.navigation-head footer .one .none .left .dl dl dt a::after {
+    content: "";
+    float: right;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: url(../../images/dyhB.png);
+    background-size: 1.5rem 1.5rem;
+    margin: .3rem 0 .3rem .8rem;
+}
+
+.navigation-head footer .one .none .left .dl dl dd {
+    /* display: flex; */
+    float: left;
+    width: 87%;
+    height: auto;
+    margin-left: 3%;
+    /* flex-wrap: wrap;
+        justify-content: space-around; */
+}
+
+.navigation-head footer .one .none .left .dl dl dd li {
+    width: auto;
+    height: auto;
+    margin-right: 1rem;
+    line-height: normal;
+}
+
+.navigation-head footer .one .none .left .dl dl dd li:hover {
+    background-color: transparent;
+}
+
+.navigation-head footer .one .none .left .dl dl dt a,
+.navigation-head footer .one .none .left .dl dl dd li a {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.navigation-head footer .one .none .left .dl dl dd li a {
+    color: gray;
+}
+
+.navigation-head footer .one .none .right .top,
+.navigation-head footer .one .none .right .bottom {
+    float: left;
+    width: 100%;
+    height: auto;
+    max-width: 16.8rem;
+}
+
+.navigation-head footer .one .none .right .top {
+    margin-bottom: 1.5rem;
+}
+
+.navigation-head footer .one .none .right .top li {
+    width: 8.3rem;
+    height: 3.5rem;
+    margin: 0 .1rem .1rem 0;
+}
+
+.navigation-head footer .one .none .right .top li a,
+.navigation-head footer .one .none .right .bottom li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.navigation-head footer .one .none .right .top li img {
+    width: 8.3rem;
+    height: 3.5rem;
+}
+
+.navigation-head footer .one .none .right .bottom li {
+    width: 16.8rem;
+    height: 13.4rem;
+    margin-bottom: .2rem;
+}
+
+.navigation-head footer .one .none .right .bottom li img {
+    width: 16.8rem;
+    height: 13.4rem;
+}
+
+
+/* .el-carousel--horizontal {
+            overflow-x: hidden;
+            height: 100%;
+        } */
+
+.navigation-head footer .two .twoNav,
+.navigation-head footer .three .threeNav {
+    width: 100%;
+    height: 100%;
+}
+
+.navigation-head footer .three .threeNav .sm3nav {
+    width: 19rem;
+    height: 15rem;
+}
+
+.navigation-head footer .four {
+    padding: 1rem;
+    padding-bottom: 0;
+    box-sizing: border-box;
+}
+
+.navigation-head footer .four .login {
+    width: 100%;
+    height: 22%;
+}
+
+.navigation-head footer .four .login .photo {
+    float: left;
+    width: 25%;
+    margin-left: 5%;
+}
+
+.navigation-head footer .four .login .photo a {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    /* background: url(../images/b2.png) no-repeat -3px -3px;
+            background-size: 84px auto; */
+    text-align: center;
+    overflow: hidden;
+    border-radius: 100%;
+    border: .1rem solid white;
+    box-shadow: 0 0 .1rem .1rem gray;
+}
+
+.navigation-head footer .four .login .photo a img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.navigation-head footer .four .login .right {
+    float: left;
+    width: 70%;
+    height: 50%;
+    max-width: 14.5rem;
+}
+
+.navigation-head footer .four .login .right .welcome {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 1.6rem;
+    color: gray;
+}
+
+.navigation-head footer .four .login .right .zc {
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.navigation-head footer .four .login .button {
+    float: left;
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: space-around;
+}
+
+.navigation-head footer .four .login .button .left,
+.navigation-head footer .four .login .button .right {
+    width: 40%;
+}
+
+.navigation-head footer .four .login .button .right {
+    width: auto;
+}
+
+.navigation-head footer .four .login .button a {
+    display: block;
+    width: auto;
+    height: auto;
+    padding: .5rem;
+    text-align: center;
+    border-radius: 1.5rem;
+    color: white;
+    background-color: #c81623;
+    font-size: 1.4rem;
+}
+
+.navigation-head footer .four .login .button .right a {
+    background-color: black;
+    color: gold;
+}
+
+.navigation-head footer .four .kb {
+    box-sizing: border-box;
+    height: 33%;
+    border: .1rem solid gray;
+    border-left: none;
+    border-right: none;
+    padding-top: .5rem;
+}
+
+.navigation-head footer .four .kb .top {
+    width: 100%;
+    height: 25%;
+}
+
+.navigation-head footer .four .kb .top h3 {
+    float: left;
+    font-size: 1.7rem;
+}
+
+.navigation-head footer .four .kb .top a {
+    float: right;
+    color: gray;
+    font-size: 1.4rem;
+}
+
+.navigation-head footer .four .kb .top a:after {
+    float: right;
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    background: url(../../images/dyhB.png);
+    background-size: 2rem;
+}
+
+.navigation-head footer .four .kb .content {
+    width: 100%;
+    height: 75%;
+}
+
+.navigation-head footer .four .kb .content dl {
+    width: 100%;
+    height: 25%;
+}
+
+.navigation-head footer .four .kb .content dl dt {
+    float: left;
+    background-color: pink;
+    color: red;
+    font-size: 1.4rem;
+    padding: 0 3%;
+}
+
+.navigation-head footer .four .kb .content dl dd {
+    float: left;
+    width: 60%;
+    overflow: hidden;
+    margin-left: 4%;
+    font-size: 1.4rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.navigation-head footer .four .iconserver {
+    display: flex;
+    width: 100%;
+    height: 44%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 8px;
+}
+
+.navigation-head footer .four .iconserver li {
+    width: 30%;
+    height: 25%;
+    text-align: center;
+}
+
+.navigation-head footer .four .iconserver li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 1.3rem;
+}
+
+.navigation-head footer .four .iconserver li a img {
+    position: relative;
+    display: block;
+    width: 2.8rem;
+    height: 2.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navigation-head header .left .none .region2 a:hover,
+.navigation-head header .left .none .region3 a:hover,
+.navigation-head header .left .none .region1 li:hover a,
+.navigation-head header .right a:hover,
+.navigation-head main .one .bottom li a:hover,
+.navigation-head footer .one .none .left .dl dl dd li a:hover,
+.navigation-head footer .four .login .right elcome:hover,
+.navigation-head footer .four .kb .top a:hover {
+    color: #c81623;
+}
