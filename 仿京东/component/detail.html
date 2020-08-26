@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+    <script src="../js/vue.js"></script>
+    <script src="../src/elementui-ui/lib/index.js"></script>
+    <script src="../js/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/detail/head.css">
+    <link rel="stylesheet" href="../src/elementui-ui/lib/theme-chalk/index.css">
+    <title>详情页</title>
+</head>
+
+<body>
+    <div class="" id="app">
+        <div class="navigation-head">
+            <!-- 头部基本栏 -->
+            <header>
+                <div class="w">
+                    <a href="" class="jd_index">
+                        <img src="../images/home.png" alt="">京东首页
+                    </a>
+                    <div class="left">
+                        <img src="../images/定位.png" alt="">广东
+                        <div class="none">
+                            <div class="region1">
+                                <ul>
+                                    <li>
+                                        <a href="https://www.baidu.com">北京</a>
+                                    </li>
+                                    <li>
+                                        <a href="">上海</a>
+                                    </li>
+                                    <li>
+                                        <a href="">天津</a>
+                                    </li>
+                                    <li>
+                                        <a href="">重庆</a>
+                                    </li>
+                                    <li>
+                                        <a href="">河北</a>
+                                    </li>
+                                    <li>
+                                        <a href="">山西</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="">河南</a>
+                                    </li>
+                                    <li>
+                                        <a href="">辽宁</a>
+                                    </li>
+                                    <li>
+                                        <a href="">吉林</a>
+                                    </li>
+                                    <li>
+                                        <a href="">黑龙江</a>
+                                    </li>
+                                    <li>
+                                        <a href="">内蒙古</a>
+                                    </li>
+                                    <li>
+                                        <a href="">江苏</a>
+                                    </li>
+                                    <li>
+                                        <a href="">山东</a>
+                                    </li>
+                                    <li>
+                                        <a href="">安徽</a>
+                                    </li>
+                                    <li>
+                                        <a href="">浙江</a>
+                                    </li>
+                                    <li>
+                                        <a href="">福建</a>
+                                    </li>
+                                    <li>
+                                        <a href="">湖北</a>
+                                    </li>
+                                    <li>
+                                        <a href="">湖南</a>
+                                    </li>
+                                    <li>
+                                        <a href="">广东</a>
+                                    </li>
+                                    <li>
+                                        <a href="">广西</a>
+                                    </li>
+                                    <li>
+                                        <a href="">江西</a>
+                                    </li>
+                                    <li>
+                                        <a href="">西川</a>
+                                    </li>
+                                    <li>
+                                        <a href="">海南</a>
+                                    </li>
+                                    <li>
+                                        <a href="">贵州</a>
+                                    </li>
+                                    <li>
+                                        <a href="">云南</a>
+                                    </li>
+                                    <li>
+                                        <a href="">西藏</a>
+                                    </li>
+                                    <li>
+                                        <a href="">陕西</a>
+                                    </li>
+                                    <li>
+                                        <a href="">甘肃</a>
+                                    </li>
+                                    <li>
+                                        <a href="">青海</a>
+                                    </li>
+                                    <li>
+                                        <a href="">宁夏</a>
+                                    </li>
+                                    <li>
+                                        <a href="">新疆</a>
+                                    </li>
+                                    <li>
+                                        <a href="">港澳</a>
+                                    </li>
+                                    <li>
+                                        <a href="">台湾</a>
+                                    </li>
+                                    <li>
+                                        <a href="">钓鱼岛</a>
+                                    </li>
+                                    <li>
+                                        <a href="">海外</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="region2">
+                                <h5>地区专享版本</h5>
+                                <a href="https://hk.jd.com/?a=1596101032498">中国港澳</a>
+                                <a href="https://tw.jd.com/?a=1596101048370">中国台湾</a>
+                                <a href="https://global.jd.com/?a=1596101055065">京东全球</a>
+                            </div>
+                            <div class="region3">
+                                <h5>Available Sites</h5>
+                                <a href="https://www.joybuy.com/?source=1&visitor_from=2"><img src="../images/全球.png" alt=""> Global Site</a>
+                                <a href="https://www.jd.ru/?source=1&visitor_from=2"><img src="../images/俄罗斯.png" alt=""> русский язык </a>
+                                <a href="https://www.jd.id/?source=1&visitor_from=2"><img src="../images/印尼.png" alt=""> Situs Indonesia</a>
+                                <a href="https://www.joybuy.es/?source=1&visitor_from=2"><img src="../images/西班牙.png" alt=""> Sitio de España</a>
+                                <a href="https://www.jd.co.th/?source=1&visitor_from=2"><img src="../images/泰国.png" alt=""> เมืองไทย</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li class="login">
+                                <a href="https://passport.jd.com/new/login.aspx?ReturnUrl=https%3A%2F%2Fwww.jd.com%2F">你好，请登录</a>
+                                <a href="https://reg.jd.com/reg/person?ReturnUrl=https%3A//www.jd.com/">免费注册</a>
+                            </li>
+                            <li class="space"></li>
+                            <li class="list">
+                                <a href="">我的订单</a>
+                            </li>
+                            <li class="space"></li>
+                            <li class="myjd">
+                                <a href="">我的京东</a>
+                                <div class="none">
+                                    <div class="one">
+                                        <ul>
+                                            <li>
+                                                <a href="">待处理订单</a>
+                                            </li>
+                                            <li>
+                                                <a href="">消息</a>
+                                            </li>
+                                            <li>
+                                                <a href="">返修退换货</a>
+                                            </li>
+                                            <li>
+                                                <a href="">我的问答</a>
+                                            </li>
+                                            <li>
+                                                <a href="">降价商品</a>
+                                            </li>
+                                            <li>
+                                                <a href="">我的关注</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="two">
+                                        <ul>
+                                            <li>
+                                                <a href="">我的京豆</a>
+                                            </li>
+                                            <li>
+                                                <a href="">我的优惠卷</a>
+                                            </li>
+                                            <li>
+                                                <a href="">我的白条</a>
+                                            </li>
+                                            <li>
+                                                <a href="">我的理财</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="space"></li>
+                            <li class="vip">
+                                <a href="">京东会员</a>
+                            </li>
+                            <li class="space"></li>
+                            <li class="shop">
+                                <a href="">企业采购</a>
+                                <div class="none">
+                                    <ul>
+                                        <li>
+                                            <a href="">企业购</a>
+                                        </li>
+                                        <li>
+                                            <a href="">商用场景馆</a>
+                                        </li>
+                                        <li>
+                                            <a href="">工业品</a>
+                                        </li>
+                                        <li>
+                                            <a href="">礼品卡</a>
+                                        </li>
+                                        <li>
+                                            <a href="">丰客多商城</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="space"></li>
+                            <li class="server">
+                                <span>客户服务</span>
+                                <div class="none">
+                                    <div class="one">
+                                        <h5>客户</h5>
+                                        <ul>
+                                            <li>
+                                                <a href="">帮助中心</a>
+                                            </li>
+                                            <li>
+                                                <a href="">售后服务</a>
+                                            </li>
+                                            <li>
+                                                <a href="">在线客服</a>
+                                            </li>
+                                            <li>
+                                                <a href="">意见建议</a>
+                                            </li>
+                                            <li>
+                                                <a href="">电话客服</a>
+                                            </li>
+                                            <li>
+                                                <a href="">客服邮箱</a>
+                                            </li>
+                                            <li>
+                                                <a href="">金融资讯</a>
+                                            </li>
+                                            <li>
+                                                <a href="">全球售客服</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="two">
+                                        <h5>商户</h5>
+                                        <ul>
+                                            <li>
+                                                <a href="">合作招商</a>
+                                            </li>
+                                            <li>
+                                                <a href="">成长中心</a>
+                                            </li>
+                                            <li>
+                                                <a href="">商家后台</a>
+                                            </li>
+                                            <li>
+                                                <a href="">京麦工作台</a>
+                                            </li>
+                                            <li>
+                                                <a href="">商家帮助</a>
+                                            </li>
+                                            <li>
+                                                <a href="">规则平台</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="space"></li>
+                            <li class="nav">
+                                <span>网站导航</span>
+                                <div class="none">
+                                    <div class="one">
+                                        <h5>特色主题</h5>
+                                        <ul>
+                                            <li>
+                                                <a href="">新品首发</a>
+                                            </li>
+                                            <li>
+                                                <a href="">京东金融</a>
+                                            </li>
+                                            <li>
+                                                <a href="">全球售</a>
+                                            </li>
+                                            <li>
+                                                <a href="">国际站</a>
+                                            </li>
+                                            <li>
+                                                <a href="">京东会员</a>
+                                            </li>
+                                            <li>
+                                                <a href="">京东预售</a>
+                                            </li>
+                                            <li>
+                                                <a href="">台湾售</a>
+                                            </li>
+                                            <li>
+                                                <a href="">俄语站</a>
+                                            </li>
+                                            <li>
+                                                <a href="">装机大师</a>
+                                            </li>
+                                            <li>
+                                                <a href="">0元评测</a>
+                                            </li>
+                                            <li>
+                                                <a href="">港澳售</a>
+                                            </li>
+                                            <li>
+                                                <a href="">优惠卷</a>
+                                            </li>
+                                            <li>
+                                                <a href="">秒杀</a>
+                                            </li>
+                                            <li>
+                                                <a href="">闪购</a>
+                                            </li>
+                                            <li>
+                                                <a href="">印尼站</a>
+                                            </li>
+                                            <li>
+                                                <a href="">京东金融科技</a>
+                                            </li>
+                                            <li>
+                                                <a href="">陪伴计划</a>
+                                            </li>
+                                            <li>
+                                                <a href="">出海招商</a>
+                                            </li>
+                                            <li>
+                                                <a href="">拍拍二手</a>
+                                            </li>
+                                            <li>
+                                                <a href="">买什么</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="two">
+                                        <h5>行业频道</h5>
+                                        <ul>
+                                            <li><a href="">手机</a></li>
+                                            <li><a href="">智能数码</a></li>
+                                            <li><a href="">玩3C</a></li>
+                                            <li><a href="">电脑办公</a></li>
+                                            <li>
+                                                <a href="">家用电器</a>
+                                            </li>
+                                            <li>
+                                                <a href="">京鱼座智能</a>
+                                            </li>
+                                            <li>
+                                                <a href="">京东服饰</a>
+                                            </li>
+                                            <li>
+                                                <a href="">京东生鲜</a>
+                                            </li>
+                                            <li>
+                                                <a href="">家装城</a>
+                                            </li>
+                                            <li>
+                                                <a href="">母婴</a>
+                                            </li>
+                                            <li>
+                                                <a href="">食品</a>
+                                            </li>
+                                            <li>
+                                                <a href="">农资频道</a>
+                                            </li>
+                                            <li>
+                                                <a href="">整车</a>
+                                            </li>
+                                            <li>
+                                                <a href="">图书</a>
+                                            </li>
+                                            <li>
+                                                <a href="">劳动防护</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="three">
+                                        <h5>生活服务</h5>
+                                        <ul>
+                                            <li>
+                                                <a href="">京东众筹</a>
+                                            </li>
+                                            <li>
+                                                <a href="">白条</a>
+                                            </li>
+                                            <li>
+                                                <a href="">京东金融App</a>
+                                            </li>
+                                            <li>
+                                                <a href="">京东小金库</a>
+                                            </li>
+                                            <li>
+                                                <a href="">理财</a>
+                                            </li>
+                                            <li>
+                                                <a href="">话费</a>
+                                            </li>
+                                            <li>
+                                                <a href="">水电煤</a>
+                                            </li>
+                                            <li>
+                                                <a href="">彩票</a>
+                                            </li>
+                                            <li>
+                                                <a href="">旅行</a>
+                                            </li>
+                                            <li>
+                                                <a href="">机票酒店</a>
+                                            </li>
+                                            <li>
+                                                <a href="">电影票</a>
+                                            </li>
+                                            <li>
+                                                <a href="">京东到家</a>
+                                            </li>
+                                            <li>
+                                                <a href="">游戏</a>
+                                            </li>
+                                            <li>
+                                                <a href="">拍拍回收</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="four">
+                                        <h5>更多精选</h5>
+                                        <ul>
+                                            <li>
+                                                <a href="">合作招商</a>
+                                            </li>
+                                            <li>
+                                                <a href="">京东通信</a>
+                                            </li>
+                                            <li>
+                                                <a href="">京东E卡</a>
+                                            </li>
+                                            <li>
+                                                <a href="">企业采购</a>
+                                            </li>
+                                            <li>
+                                                <a href="">服务市场</a>
+                                            </li>
+                                            <li>
+                                                <a href="">办公生活馆</a>
+                                            </li>
+                                            <li>
+                                                <a href="">校园加盟</a>
+                                            </li>
+                                            <li>
+                                                <a href="">京东社区</a>
+                                            </li>
+                                            <li>
+                                                <a href="">游戏社区</a>
+                                            </li>
+                                            <li>
+                                                <a href="">知识产权维权</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="space"></li>
+                            <li class="phone">
+                                <span>手机京东</span>
+                                <div class="none"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <!-- 搜索部分 -->
+            <main>
+                <div class="w">
+                    <div class="left">
+                        <a href=""></a>
+                        <el-select v-model="value" placeholder="请选择">
+                            <el-option v-for="item in sort" :key="item.id" :label="item.value" :value="item.value">
+                                <a :href="item.adress">{{item.value}}</a>
+                            </el-option>
+                        </el-select>
+                    </div>
+                    <div class="right">
+                        <div class="search">
+                            <div class="frame">
+                                <input type="text" placeholder="热点1">
+                                <button>搜全站</button>
+                                <button>搜本站</button>
+                            </div>
+                            <div class="cart">
+                                <img src="../images/购物车空.png" alt="">
+                                <div class="count">1</div>
+                                <a href="">我的购物车</a>
+                            </div>
+                        </div>
+                        <div class="hotpoint">
+                            <ul>
+                                <li>
+                                    <a href="">热点1</a>
+                                </li>
+                                <li>
+                                    <a href="">热点1</a>
+                                </li>
+                                <li>
+                                    <a href="">热点1</a>
+                                </li>
+                                <li>
+                                    <a href="">热点1</a>
+                                </li>
+                                <li>
+                                    <a href="">热点1</a>
+                                </li>
+                                <li>
+                                    <a href="">热点1</a>
+                                </li>
+                                <li>
+                                    <a href="">热点1</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <div class="picNav" id="picNavBig">
+                <img src="../uploads/HUAWEI01.jpg" alt="detail_FirstN" usemap="#detail_FirstN" width="100%" height="100%">
+                <map name="detail_FirstN" id="detail_FirstN">
+                    <area shape="rect" coords="790,0,1287,220" href="" alt="旗舰店" id='area'>
+                    <area shape="rect" coords="1300,0,1430,220" href="" alt="京东自营" id='area'>
+                    <area shape="rect" coords="1438,0,1568,220" href="" alt="关注" id='area'>
+                    <area shape="rect" coords="1973,0,2507,220" href="" alt="推荐商品1" id='area'>
+                    <area shape="rect" coords="2539,0,3100,220" href="" alt="推荐商品2" id='area'>
+                </map>
+            </div>
+            <div class="shop-nav">
+                <div class="w">
+                    <div class="total">
+                        <span>查看所有商品</span>
+                        <i class="el-icon-menu"></i>
+                        <div class="none">
+                            <dl>
+                                <dt>Mate系列</dt>
+                                <dd>
+                                    <li>
+                                        <a href="">华为Mate&nbsp;Xs</a>
+                                    </li>
+                                    <li>
+                                        <a href="">华为Mate&nbsp;30&nbsp;5G</a>
+                                    </li>
+                                    <li>
+                                        <a href="">华为Mate&nbsp;30&nbsp;Pro&nbsp;5G</a>
+                                    </li>
+                                    <li>
+                                        <a href="">华为Mate&nbsp;30</a>
+                                    </li>
+                                    <li>
+                                        <a href="">华为Mate&nbsp;30&nbsp;Pro</a>
+                                    </li>
+                                    <li>
+                                        <a href="">华为Mate&nbsp;20&nbsp;X(5G)</a>
+                                    </li>
+                                    <li>
+                                        <a href="">华为Mate&nbsp;20 Pro</a>
+                                    </li>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>P系列</dt>
+                                <dd>
+                                    <li>
+                                        <a href="">HUAWEI&nbsp;P40&nbsp;Pro+</a>
+                                    </li>
+                                    <li>
+                                        <a href="">HUAWEI&nbsp;P40&nbsp;Pro</a>
+                                    </li>
+                                    <li>
+                                        <a href="">HUAWEI&nbsp;P40</a>
+                                    </li>
+                                    <li>
+                                        <a href="">HUAWEI&nbsp;P30</a>
+                                    </li>
+                                    <li>
+                                        <a href="">HUAWEI&nbsp;P30&nbsp;Pro</a>
+                                    </li>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>nova/麦芒系列</dt>
+                                <dd>
+                                    <li>
+                                        <a href="">nova&nbsp;7&nbsp;Pro&nbsp;5G</a>
+                                    </li>
+                                    <li>
+                                        <a href="">nova&nbsp;7&nbsp;5G</a>
+                                    </li>
+                                    <li>
+                                        <a href="">nova&nbsp;7&nbsp;SE&nbsp;5G</a>
+                                    </li>
+                                    <li>
+                                        <a href="">nova&nbsp;6&nbsp;5G</a>
+                                    </li>
+                                    <li>
+                                        <a href="">nova&nbsp;6</a>
+                                    </li>
+                                    <li>
+                                        <a href="">nova&nbsp;6&nbsp;SE</a>
+                                    </li>
+                                    <li>
+                                        <a href="">nova&nbsp;5z</a>
+                                    </li>
+                                    <li>
+                                        <a href="">nova&nbsp;5j&nbsp;Pro</a>
+                                    </li>
+                                    <li>
+                                        <a href="">nova&nbsp;5&nbsp;Pro</a>
+                                    </li>
+                                    <li>
+                                        <a href="">nova&nbsp;5i</a>
+                                    </li>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>畅享系列</dt>
+                                <dd>
+                                    <li>
+                                        <a href="">畅享&nbsp;20Pro</a>
+                                    </li>
+                                    <li>
+                                        <a href="">畅享&nbsp;5G</a>
+                                    </li>
+                                    <li>
+                                        <a href="">畅享&nbsp;10e</a>
+                                    </li>
+                                    <li>
+                                        <a href="">畅享&nbsp;10s</a>
+                                    </li>
+                                    <li>
+                                        <a href="">畅享&nbsp;10</a>
+                                    </li>
+                                    <li>
+                                        <a href="">畅享&nbsp;10&nbsp;Plus</a>
+                                    </li>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>智慧屏</dt>
+                                <dd>
+                                    <li>
+                                        <a href="">智慧屏V65</a>
+                                    </li>
+                                    <li>
+                                        <a href="">智慧屏V75</a>
+                                    </li>
+                                    <li>
+                                        <a href="">智慧屏V55i</a>
+                                    </li>
+                                    <li>
+                                        <a href="">智慧屏X65</a>
+                                    </li>
+
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>笔记本</dt>
+                                <dd>
+                                    <li>
+                                        <a href="">MateBook&nbsp;X</a>
+                                    </li>
+                                    <li>
+                                        <a href="">MateBook&nbsp;X&nbsp;Pro</a>
+                                    </li>
+                                    <li>
+                                        <a href="">MateBook&nbsp;D&nbsp;15</a>
+                                    </li>
+                                    <li>
+                                        <a href="">MateBook&nbsp;D&nbsp;14</a>
+                                    </li>
+                                    <li>
+                                        <a href="">MateBook&nbsp;14</a>
+                                    </li>
+                                    <li>
+                                        <a href="">MateBook&nbsp;13</a>
+                                    </li>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>平板</dt>
+                                <dd>
+                                    <li>
+                                        <a href="">MatePad&nbsp;10.8</a>
+                                    </li>
+                                    <li>
+                                        <a href="">MatePad</a>
+                                    </li>
+                                    <li>
+                                        <a href="">MatePad&nbsp;Pro</a>
+                                    </li>
+                                    <li>
+                                        <a href="">畅享&nbsp;2</a>
+                                    </li>
+                                    <li>
+                                        <a href="">平板&nbsp;M6&nbsp;高能</a>
+                                    </li>
+                                    <li>
+                                        <a href="">平板&nbsp;M6&nbsp;10.8</a>
+                                    </li>
+                                    <li>
+                                        <a href="">畅享平板&nbsp;10.1英寸</a>
+                                    </li>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>路由器</dt>
+                                <dd>
+                                    <li>
+                                        <a href="">路由Q2&nbsp;Pro</a>
+                                    </li>
+                                    <li>
+                                        <a href="">路由WS200四核版</a>
+                                    </li>
+                                    <li>
+                                        <a href="">路由WS200增强版</a>
+                                    </li>
+                                    <li>
+                                        <a href="">4G路由2</a>
+                                    </li>
+                                    <li>
+                                        <a href="">路由&nbsp;A2</a>
+                                    </li>
+                                    <li>
+                                        <a href="">路由WS5106</a>
+                                    </li>
+                                    <li>
+                                        <a href="">路由5G随行WIFI</a>
+                                    </li>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>穿戴</dt>
+                                <dd>
+                                    <li>
+                                        <a href="">WATCH&nbsp;GT2</a>
+                                    </li>
+                                    <li>
+                                        <a href="">华为手环&nbsp;B6</a>
+                                    </li>
+                                    <li>
+                                        <a href="">华为儿童手表&nbsp;4X</a>
+                                    </li>
+                                    <li>
+                                        <a href="">华为手环4&nbsp;Pro</a>
+                                    </li>
+                                    <li>
+                                        <a href="">华为手环3&nbsp;Pro</a>
+                                    </li>
+                                    <li>
+                                        <a href="">华为儿童手表3Pro</a>
+                                    </li>
+                                    <li>
+                                        <a href="">VR眼镜</a>
+                                    </li>
+                                    <li>
+                                        <a href="">WATCH&nbsp;GT&nbsp;2e</a>
+                                    </li>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>华为智选</dt>
+                                <dd>
+                                    <li>
+                                        <a href="">HUAWEI&nbsp;SOUND&nbsp;X</a>
+                                    </li>
+                                    <li>
+                                        <a href="">华为AI音箱</a>
+                                    </li>
+                                    <li>
+                                        <a href="">空气净化器</a>
+                                    </li>
+                                    <li>
+                                        <a href="">读写台灯</a>
+                                    </li>
+                                    <li>
+                                        <a href="">智能牙刷</a>
+                                    </li>
+                                    <li>
+                                        <a href="">AI摄像头</a>
+                                    </li>
+                                    <li>
+                                        <a href="">安放套装</a>
+                                    </li>
+                                    <li>
+                                        <a href="">全彩灯泡</a>
+                                    </li>
+                                    <li>
+                                        <a href="">香蕉灯</a>
+                                    </li>
+                                    <li>
+                                        <a href="">早教机</a>
+                                    </li>
+                                    <li>
+                                        <a href="">净水器</a>
+                                    </li>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>配件</dt>
+                                <dd>
+                                    <li>
+                                        <a href="">FreeBud3真无线耳机</a>
+                                    </li>
+                                    <li>
+                                        <a href="">HUAWEI&nbsp;Freelace&nbsp;无线耳机</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Freebuds&nbsp;悦享版</a>
+                                    </li>
+                                    <li>
+                                        <a href="">无限立式快充</a>
+                                    </li>
+                                    <li>
+                                        <a href="">华为移动电源</a>
+                                    </li>
+                                    <li>
+                                        <a href="">华为体脂秤2Pro</a>
+                                    </li>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="branch">
+                        <ul>
+                            <li>
+                                <a href="">首页</a>
+                            </li>
+                            <li>
+                                <a href="">P系列</a>
+                                <div class="none" id="picNavSma">
+                                    <img src="../uploads/Pseriesjpg.jpg" alt="P系列手机" usemap="#detail_SecondN" width="100%" height="100%">
+                                    <map name="detail_SecondN" id="detail_SecondN">
+                                        <area shape="rect" coords="391,0,591,240" href="" alt="HUAWEI P40 Pro+">
+                                        <area shape="rect" coords="636,0,836,240" href="" alt="HUAWEI P40 Pro">
+                                        <area shape="rect" coords="881,0,1081,240" href="" alt="HUAWEI P40">
+                                        <area shape="rect" coords="1126,0,1326,240" href="" alt="HUAWEI P30 Pro">
+                                        <area shape="rect" coords="1371,0,1571,240" href="" alt="HUAWEI P30">
+                                    </map>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">Mate系列</a>
+                                <div class="none">
+                                    <img src="../uploads/Mseries.jpg" alt="M系列手机" usemap="#Mseries">
+                                    <map name="Mseries" id="Mseries">
+                                        <area shape="rect" coords="370,0,522,240" href="" alt="华为 Mate Xs">
+                                        <area shape="rect" coords="528,0,674,240" href="" alt="华为 Mate30 5G">
+                                        <area shape="rect" coords="675,0,826,240" href="" alt="华为 Mate30 Pro 5G">
+                                        <area shape="rect" coords="835,0,981,240" href="" alt="华为 Mate30 RS">
+                                        <area shape="rect" coords="1000,0,1133,240" href="" alt="华为 Mate30">
+                                        <area shape="rect" coords="1135,0,1286,240" href="" alt="华为 Mate30 Pro">
+                                        <area shape="rect" coords="1290,0,1438,240" href="" alt="华为 Mate20 X(5G)">
+                                        <area shape="rect" coords="1440,0,1600,240" href="" alt="华为 Mate20 Pro">
+                                    </map>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">nova系列</a>
+                                <div class="none">
+                                    <img src="../uploads/NoveSeries.jpg" alt="nova系列手机" usemap="#NoveSeries">
+                                    <map name="NoveSeries" id="NoveSeries">
+                                        <area shape="rect" coords="373,0,493,240" href="" alt="nova 7 Pro">
+                                        <area shape="rect" coords="520,0,640,240" href="" alt="nova 7">
+                                        <area shape="rect" coords="650,0,770,240" href="" alt="nova 7 SE">
+                                        <area shape="rect" coords="780,0,900,240" href="" alt="nova 6 5G">
+                                        <area shape="rect" coords="910,0,1050,240" href="" alt="nova 6 SE">
+                                        <area shape="rect" coords="1055,0,1175,240" href="" alt="nova 5z">
+                                        <area shape="rect" coords="1190,0,1310,240" href="" alt="nova 5 Pro">
+                                        <area shape="rect" coords="1320,0,1450,240" href="" alt="nova 5i Pro">
+                                        <area shape="rect" coords="1460,0,1580,240" href="" alt="nova 5i">
+                                    </map>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">麦芒/畅享系列</a>
+                                <div class="none">
+                                    <img src="../uploads/MangSeries.jpg" alt="畅享系列手机" usemap="#MangSeries">
+                                    <map name="MangSeries" id="MangSeries">
+                                        <area shape="rect" coords="380,0,505,240" href="" alt="畅享 20 Pro">
+                                        <area shape="rect" coords="520,0,670,240" href="" alt="畅享Z 5G">
+                                        <area shape="rect" coords="680,0,820,240" href="" alt="麦芒9 5G">
+                                        <area shape="rect" coords="830,0,970,240" href="" alt="畅享 10e">
+                                        <area shape="rect" coords="980,0,1130,240" href="" alt="畅享 10S">
+                                        <area shape="rect" coords="1140,0,1270,240" href="" alt="畅享 10">
+                                        <area shape="rect" coords="1280,0,1430,240" href="" alt="畅享10 Plus">
+                                        <area shape="rect" coords="1440,0,1590,240" href="" alt="麦芒8">
+                                    </map>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">智慧屏</a>
+                                <div class="none">
+                                    <img src="../uploads/PingSeries.jpg" alt="智慧屏" usemap="#PingSeries">
+                                    <map name="PingSeries" id="PingSeries">
+                                        <area shape="rect" coords="370,0,600,240" href="" alt="华为智慧屏V55i">
+                                        <area shape="rect" coords="620,0,850,240" href="" alt="华为智慧屏V65">
+                                        <area shape="rect" coords="860,0,1090,240" href="" alt="华为智慧屏V75">
+                                        <area shape="rect" coords="1100,0,1330,240" href="" alt="华为智慧屏X65">
+                                    </map>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">笔记本</a>
+                                <div class="none">
+                                    <img src="../uploads/Pseriesjpg.jpg" alt="P系列手机" usemap="#BookSeries">
+                                    <map name="BookSeries" id="BookSeries">
+                                        <area shape="rect" coords="391,0,591,240" href="" alt="MateBook X">
+                                        <area shape="rect" coords="636,0,836,240" href="" alt="MateBook D 15（锐龙版）">
+                                        <area shape="rect" coords="881,0,1081,240" href="" alt="MateBook D 14（锐龙版）">
+                                        <area shape="rect" coords="1126,0,1326,240" href="" alt="MateBook X Pro">
+                                        <area shape="rect" coords="1371,0,1571,240" href="" alt="MateBook 14">
+                                        <area shape="rect" coords="881,0,1081,240" href="" alt="MateBook 13">
+                                        <area shape="rect" coords="1126,0,1326,240" href="" alt="MateBook D 15（intel版）">
+                                        <area shape="rect" coords="1371,0,1571,240" href="" alt="MateBook D 14（intel版）">
+                                    </map>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">平板</a>
+                                <div class="none">
+                                    <img src="../uploads/PadSeries.jpg" alt="P系列手机" usemap="#PadSeries">
+                                    <map name="PadSeries" id="PadSeries">
+                                        <area shape="rect" coords="391,0,591,240" href="" alt="MatePad 10.8">
+                                        <area shape="rect" coords="636,0,836,240" href="" alt="MatePad">
+                                        <area shape="rect" coords="881,0,1081,240" href="" alt="MatePad Pro">
+                                        <area shape="rect" coords="1126,0,1326,240" href="" alt="畅享平板 2">
+                                        <area shape="rect" coords="1371,0,1571,240" href="" alt="M6 高能版">
+                                        <area shape="rect" coords="1126,0,1326,240" href="" alt="M6 10.8英寸">
+                                        <area shape="rect" coords="1371,0,1571,240" href="" alt="畅享平板10.1英寸">
+                                    </map>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">路由器</a>
+                                <div class="none">
+                                    <img src="../uploads/WifiSeries.jpg" alt="P系列手机" usemap="#WifiSeries">
+                                    <map name="WifiSeries" id="WifiSeries">
+                                        <area shape="rect" coords="391,0,591,240" href="" alt="5G随性wifi">
+                                        <area shape="rect" coords="636,0,836,240" href="" alt="Q2S">
+                                        <area shape="rect" coords="881,0,1081,240" href="" alt="AX3">
+                                        <area shape="rect" coords="1126,0,1326,240" href="" alt="AX3 Pro">
+                                        <area shape="rect" coords="1371,0,1571,240" href="" alt="WS5106">
+                                        <area shape="rect" coords="1126,0,1326,240" href="" alt="4G路由2 Pro">
+                                        <area shape="rect" coords="1371,0,1571,240" href="" alt="华为路由 A2">
+                                    </map>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">穿戴</a>
+                                <div class="none">
+                                    <img src="../uploads/watchSeries.jpg" alt="P系列手机" usemap="#watchSeries">
+                                    <map name="watchSeries" id="pseries">
+                                        <area shape="rect" coords="391,0,591,240" href="" alt="Watch GT2">
+                                        <area shape="rect" coords="636,0,836,240" href="" alt="华为手环 B6">
+                                        <area shape="rect" coords="881,0,1081,240" href="" alt="儿童手表 4X">
+                                        <area shape="rect" coords="1126,0,1326,240" href="" alt="华为手环 4 Pro">
+                                        <area shape="rect" coords="1371,0,1571,240" href="" alt="VR Glass">
+                                        <area shape="rect" coords="1126,0,1326,240" href="" alt="儿童手表 3 Pro">
+                                        <area shape="rect" coords="1371,0,1571,240" href="" alt="智能眼镜">
+                                    </map>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">华为智选</a>
+                                <div class="none">
+                                    <img src="../uploads/AiSeries.jpg" alt="P系列手机" usemap="#AiSeries">
+                                    <map name="AiSeries" id="AiSeries">
+                                        <area shape="rect" coords="391,0,591,240" href="" alt="华为AI音箱2">
+                                        <area shape="rect" coords="636,0,836,240" href="" alt="空气净化器">
+                                        <area shape="rect" coords="881,0,1081,240" href="" alt="早教机">
+                                        <area shape="rect" coords="1126,0,1326,240" href="" alt="AI摄像头">
+                                        <area shape="rect" coords="1371,0,1571,240" href="" alt="扫地机器人"">
+                                        <area shape="rect" coords="1126,0,1326,240" href="" alt="智能台灯">
+                                        <area shape="rect" coords="1371,0,1571,240" href="" alt="电动牙刷">
+                                    </map>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">音频配件</a>
+                                <div class="none">
+                                    <img src="../uploads/PodSeries.jpg" alt="P系列手机" usemap="#PodSeries">
+                                    <map name="PodSeries" id="PodSeries">
+                                        <area shape="rect" coords="391,0,591,240" href="" alt="FreeLace Pro无线耳机">
+                                        <area shape="rect" coords="636,0,836,240" href="" alt="FreeLace无线耳机">
+                                        <area shape="rect" coords="881,0,1081,240" href="" alt="FreeBuds 3无线耳机">
+                                        <area shape="rect" coords="1126,0,1326,240" href="" alt="FreeBuds 悦享版">
+                                        <area shape="rect" coords="1371,0,1571,240" href="" alt="智能体脂秤 2 Pro">
+                                        <area shape="rect" coords="1126,0,1326,240" href="" alt="立式无线充电器">
+                                        <area shape="rect" coords="1371,0,1571,240" href="" alt="10000mAh移动电源">
+                                    </map>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 商品的详情 -->
+        <div class="ProductDetail">
+            <div class="head">
+                <div class="w">
+                    <el-breadcrumb separator-class="el-icon-arrow-right">
+                        <el-breadcrumb-item :to="{ path: '/' }">手机通讯</el-breadcrumb-item>
+                        <el-breadcrumb-item :to="{ path: '/' }">手机</el-breadcrumb-item>
+                        <el-breadcrumb-item :to="{ path: '/' }">手机</el-breadcrumb-item>
+                        <el-breadcrumb-item :to="{ path: '/' }">华为</el-breadcrumb-item>
+                        <el-breadcrumb-item :to="{ path: '/' }">华为P40</el-breadcrumb-item>
+                    </el-breadcrumb>
+                    <div class="store-att">
+                        <a href="">华为京东自营官方旗舰店</a>
+                        <a href=""><i class="el-icon-thumb"></i>联系客服</a>
+                        <a href=""><i class="el-icon-star-off"></i>关注店铺</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- <script>
+    adjust();
+    var timeout = null; //onresize触发次数过多，设置定时器
+    window.onresize = function() {
+        clearTimeout(timeout);
+        timeout = setTimeout(function() {
+            window.location.reload();
+        }, 100); //页面大小变化，重新加载页面以刷新MAP
+    }
+
+    //获取MAP中元素属性
+    function adjust() {
+        var map = document.getElementById("hwqjpic");
+        var element = map.childNodes;
+        var itemNumber = element.length / 2;
+        for (var i = 0; i < itemNumber - 1; i++) {
+            var item = 2 * i + 1;
+            var oldCoords = element[item].coords;
+            var newcoords = adjustPosition(oldCoords);
+            element[item].setAttribute("coords", newcoords);
+        }
+        var test = element;
+    }
+
+    //调整MAP中坐标
+    function adjustPosition(position) {
+        var pageWidth = document.getElementById('picNav').clientWidth; //获取页面宽度
+        var pageHeith = document.getElementById('picNav').clientHeight; //获取页面高度
+
+        var imageWidth = 3840; //图片的长宽
+        var imageHeigth = 220;
+
+        var each = position.split(",");
+        //获取每个坐标点
+        for (var i = 0; i < each.length; i++) {
+            each[i] = Math.round(parseInt(each[i]) * pageWidth / imageWidth).toString(); //x坐标
+            i++;
+            each[i] = Math.round(parseInt(each[i]) * pageHeith / imageHeigth).toString(); //y坐标
+        }
+        //生成新的坐标点
+        var newPosition = "";
+        for (var i = 0; i < each.length; i++) {
+            newPosition += each[i];
+            if (i < each.length - 1) {
+                newPosition += ",";
+            }
+        }
+        return newPosition;
+    }
+</script> -->
+<script src="../js/detail/detail_FirstN.js"></script>
+<script type="text/javascript">
+    new Vue({
+        el: '#app',
+        data: function() {
+            return {
+                sort: [{
+                    id: 0,
+                    value: '选项1',
+                    // label: '分类',
+                    adress: 'https://www.baidu.com/'
+                }, {
+                    id: 1,
+                    value: '选项2',
+                    // label: '分类1',
+                    adress: 'https://www.baidu.com/'
+                }, {
+                    id: 2,
+                    value: '选项3',
+                    // label: '分类2',
+                    adress: 'https://www.baidu.com/'
+                }],
+                value: '全部分类'
+            }
+        },
+        methods: {
+
+        },
+    }, )
+</script>
+
+
+</html>
+
+</html>
